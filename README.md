@@ -8,6 +8,9 @@
 
 也聊作学习的笔记之用。
 
+在Github上的阅读体验一般，此为公式无法完全编译之故。为了最佳使用，可挑选自身最感兴趣之文章，
+并用Visual Studio Code,Obsidian等编辑器之流查看效果最好。
+
 目前已经添加的论文：
 
 1.Moiré bands in twisted double-layer graphene
