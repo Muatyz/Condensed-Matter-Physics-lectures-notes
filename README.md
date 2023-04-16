@@ -11,6 +11,8 @@
 在Github上的阅读体验一般，此为公式无法完全编译之故。为了最佳使用，可挑选自身最感兴趣之文章，
 并用Visual Studio Code,Obsidian等编辑器之流查看效果最好。
 
+注意:某些浏览器扩展(e.g.Tex All the Things)可能能帮助你在Github上查看公式，但是效果难以保证。
+
 目前已经添加的论文：
 
 1.Moiré bands in twisted double-layer graphene
