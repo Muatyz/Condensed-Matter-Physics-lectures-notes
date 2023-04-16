@@ -66,11 +66,13 @@ As the twist angles become smaller, interlayer coupling strengthens, and the qua
 ## Model 模型
 
 >We construct a low-energy continuum model Hamiltonian that consists of three terms: two single-layer Dirac–Hamiltonian terms that account for the isolated graphene sheets and a tunneling term that describes hopping between layers. The Dirac–Hamiltonian (21) for a layer rotated by an angle θ with respect to a fixed coordinate system is
-$v_k=$
->$$vk\begin{bmatrix}
+>
+>$$v_k=vk\begin{bmatrix}
 0 & e^{i(θ_{k}-θ)}\\
 e^{i(θ_{k}-θ)} & 0\\
-\end{bmatrix}$$
+\end{bmatrix}
+>$$
+>
 >where v is the Dirac velocity, k is momentum measured from the layer’s Dirac point, θk is the momentum orientation relative to the x axis, and the spinor Hamiltonian acts on the individual layer’s A and B sublattice degrees-of-freedom. We choose the coordinate system depicted in Fig. 1 for which the decoupled bilayer Hamiltonian is $|1>h(θ/2)<1|+|2>h(-θ/2)<2|$, where $|i><i|$ projects onto layer $i$.
 
 译:
