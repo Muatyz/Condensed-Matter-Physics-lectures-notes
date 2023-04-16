@@ -74,7 +74,7 @@ e^{i(θ_{k}-θ)} & 0\\
 
 译:
 
-我们构建了一个低能连续模型下的哈密顿量，它由三个项组成：两个单层狄拉克-哈密顿项(代表孤立的石墨烯层)，一个隧道项，描述层间的跳跃。相对于固定坐标系，旋转一个角度θ的层的狄拉克-哈米顿项（21）为$v_k=$ 
+我们构建了一个低能连续模型下的哈密顿量，它由三个项组成：两个单层狄拉克-哈密顿项(代表孤立的石墨烯层)，一个"Tunneling"项(~~TUNNEL可以理解为隧穿的过程~~)，描述层间的跳跃。相对于固定坐标系，旋转一个角度θ的层的狄拉克-哈米顿项（21）为$v_k=$ 
 $$vk\begin{bmatrix} 
 0 & e^{i(θ_{k}-θ)}\\
 e^{i(θ_{k}-θ)} & 0\\ 
@@ -95,11 +95,12 @@ $|\Psi_{\vec{p}β}^{(2)}=\frac{1}{\sqrt{N}}∑_{\vec{R'}}e^{i\vec{p}(R'+\tau_{β
 
 译:
 
-我们通过假设π轨道之间的层间隧道振幅是投射到石墨烯平面上的空间分离的平滑函数$t(r)$，
-得出了隧道项的连续模型。矩阵元素
-$T_{\vec{k}\vec{p'}}^{αβ}=<Ψ_{\vec{k}}^{(1)}|H_{T}|Ψ_{\vec{p'}β}^{(2)}>$
-的隧道哈密顿量
+我们假设π轨道之间的层间跃迁振幅是投射到石墨烯平面上的空间分离的平滑函数$t(r)$，
+从而得到了层间跃迁项的连续模型。
+层间跃迁项哈密顿量
 $H_{T}$
+的矩阵元素
+$T_{\vec{k}\vec{p'}}^{αβ}=<Ψ_{\vec{k}}^{(1)}|H_{T}|Ψ_{\vec{p'}β}^{(2)}>$
 描述了一个过程，其中一个具有
 $\vec{p'}=M\vec{p}$
 动量的电子在一层的子晶格β上跳到另一层的动量态
@@ -107,3 +108,37 @@ $\vec{k}$
 和子晶格α上。 
 在一个π带紧-结合模型中，两层的波函数对一个给定的子晶格的投射为
 $|\Psi_{\vec{k}α}^{(1)}=\frac{1}{\sqrt{N}}∑_{\vec{R}}e^{i\vec{k}(R+\tau_{α})}|\vec{R}+τ_{α}>$ and $|\Psi_{\vec{p}β}^{(2)}=\frac{1}{\sqrt{N}}∑_{\vec{R'}}e^{i\vec{p}(R'+\tau_{β}')}|\vec{R'}+τ_{β}>$
+
+>Here $τ_{A}=0$,$ τ_{B}=τ$, and $\vec{R}$ is summed over the triangular Bravais lattice.
+Substituting Eqs. 2 and 3 in Eq. 1 and invoking the twocenter approximation,
+$<\vec{R}+\tau_{α}|H_{T}|\vec{R'}+τ_{α}-\vec{R'}-τ'_{β}>$
+for the interlayer hopping amplitude in which t depends on the difference between the positions of the two carbon atoms we find that
+>
+>$T_{\vec{k}\vec{p'}}^{αβ}=∑_{\vec{G_{1}}\vec{G_{2}}}\frac{t_{\overline{k}+\vec{G}}}{Ω}e^{i[\vec{G_{1}}τ_{α}-\vec{G_2}(τ_{β}-τ)-\vec{G'_{2}}\vec{d}]}δ_{\overline{k}+\vec{G_{1}},\overline{p'}+\vec{G'_{2}}}$
+>
+>Here Ω is the unit cell area, 
+$t_{\vec{q}}$
+is the Fourier transform of the tunneling amplitude 
+$t(\vec{r})$, the vectors 
+$\vec{G_{1}}$
+and $\vec{G_{2}}$ are summed over reciprocal lattice vectors, and 
+$\vec{G'_{2}}=M\vec{G_{2}}$.
+The bar notation over momenta in Eq. 5 indicates that momentum is measured relative to the center of the Brillouin zone and not relative to the Dirac point. 
+Note that crystal momentum is conserved by the tunneling process because 
+$t$
+depends only on the difference between lattice positions.
+
+译:
+
+这里Ω是单位晶胞面积，
+$t_{vec{q}}$
+是层间跃迁振幅
+$t(\vec{r})$
+的傅里叶变换，向量
+$vec{G_{1}}$和$vec{G_{2}}$
+是倒数晶格向量的总和，
+$vec{G'_{2}}=Mvec{G_{2}}$。
+公式5中动量的上划线表示:动量是相对于布里渊区的中心而不是相对于狄拉克点(能带零点)测量的。 
+注意:晶体动量在层间跃迁过程中是守恒的，因为$t$只取决于晶格位置的差异。
+
+>
