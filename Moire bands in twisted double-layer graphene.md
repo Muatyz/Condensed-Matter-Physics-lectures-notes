@@ -33,13 +33,13 @@ In bulk graphite 0° and 60° relative orientations of the individual layer hone
 The geometry of the bilayer system is characterized by a twist angle θ and by a translation vector d. 
 Commensurability is determined only by θ.
 Sliding one layer with respect to the other in a commensurate structure modifies the unit cell but leaves the bilayer crystalline. 
-In this work we find it convenient to regard the AB stacking as the aligned configuration. The positions of the carbon atoms in the two misaligned layers labeled by R and R' are then related by $\vec{R'}=M(θ)(\vec{R}-τ)+\vec{d}$, where M is a 2-D rotation matrix within the graphene plane, and τ is a vector connecting the two atoms in the unit cell.
+In this work we find it convenient to regard the AB stacking as the aligned configuration. The positions of the carbon atoms in the two misaligned layers labeled by R and R' are then related by $\vec{R'}=M(θ)(\vec{R}-\tau)+\vec{d}$, where M is a 2-D rotation matrix within the graphene plane, and $\tau$ is a vector connecting the two atoms in the unit cell.
 
 译:
 
 最近FLG制备方法的进展, 吸引了理论界对任意扭曲角下系统的有趣电子特性的关注(14-20).(特别是双层系统的情况)
 双层系统的几何特征是由扭曲角θ和平移矢量d决定的.在这项工作中, 我们发现将AB堆叠视为对齐的配置是很方便的.
-在两个错位的层中, 碳原子的位置由R和R'标记, 然后由$\vec{R'}=M(θ)(\vec{R}-τ)+\vec{d}$公式进行关联, 其中M是石墨烯平面内的2维旋转矩阵, τ是连接单元格中两个原子的矢量.
+在两个错位的层中, 碳原子的位置由R和R'标记, 然后由 $\vec{R'}=M(θ)(\vec{R}-\tau)+\vec{d}$ 公式进行关联, 其中M是石墨烯平面内的2维旋转矩阵, $\tau$是连接单元格中两个原子的矢量.
 
 >The problem is mathematically interesting because a bilayer forms a two-dimensional crystal only at a discrete set of commensurate rotation angles; 
 for generic twist angles Bloch’s theorem does not apply microscopically and direct electronic structure calculations are not feasible. 
@@ -63,7 +63,7 @@ As the twist angles become smaller, interlayer coupling strengthens, and the qua
 我们证明, 即使对于不相称的扭转角, 用布洛赫带描述电子结构也是有意义的, 并研究了这些能带对θ的依赖性.
 
 ---
-## Model 模型
+## Model
 
 >We construct a low-energy continuum model Hamiltonian that consists of three terms: two single-layer Dirac–Hamiltonian terms that account for the isolated graphene sheets and a tunneling term that describes hopping between layers. The Dirac–Hamiltonian (21) for a layer rotated by an angle θ with respect to a fixed coordinate system is
 >
@@ -92,9 +92,9 @@ The matrix element
 $T_{\vec{k}\vec{p'}}^{αβ}=<Ψ_{\vec{k}}^{(1)}|H_{T}|Ψ_{\vec{p'}β}^{(2)}>$
 of the tunneling Hamiltonian HT describes a process in which an electron with momentum $\vec{p'}=M\vec{p}$ residing on sublattice β in one layer hops to a momentum state $\vec{k}$ and sublattice α in the other layer. 
 In a π-band tight-binding model the projection of the wave functions of the two layers to a given sublattice are
-$|\Psi_{\vec{k}α}^{(1)}=\frac{1}{\sqrt{N}}∑_{\vec{R}}e^{i\vec{k}(R+\tau_{α})}|\vec{R}+τ_{α}>$
+$|\Psi_{\vec{k}α}^{(1)}=\frac{1}{\sqrt{N}}∑_{\vec{R}}e^{i\vec{k}(R+\tau_{α})}|\vec{R}+\tau_{α}>$
 and
-$|\Psi_{\vec{p}β}^{(2)}=\frac{1}{\sqrt{N}}∑_{\vec{R'}}e^{i\vec{p}(R'+\tau_{β}')}|\vec{R'}+τ_{β}>$
+$|\Psi_{\vec{p}β}^{(2)}=\frac{1}{\sqrt{N}}∑_{\vec{R'}}e^{i\vec{p}(R'+\tau_{β}')}|\vec{R'}+\tau_{β}>$
 
 译:
 
@@ -113,15 +113,27 @@ $\vec{k}$
 和子晶格α上. 
 在一个π带紧-结合模型中, 两层的波函数对一个给定的子晶格的投射为
 
-$|\Psi_{\vec{k}α}^{(1)}=\frac{1}{\sqrt{N}}∑_{\vec{R}}e^{i\vec{k}(R+\tau_{α})}|\vec{R}+τ_{α}>$ and $|\Psi_{\vec{p}β}^{(2)}=\frac{1}{\sqrt{N}}∑_{\vec{R'}}e^{i\vec{p}(R'+\tau_{β}')}|\vec{R'}+τ_{β}>$
+$|\Psi_{\vec{k}α}^{(1)}=\frac{1}{\sqrt{N}}∑_{\vec{R}}e^{i\vec{k}(R+\tau_{α})}|\vec{R}+\tau_{α}>$ and $|\Psi_{\vec{p}β}^{(2)}=\frac{1}{\sqrt{N}}∑_{\vec{R'}}e^{i\vec{p}(R'+\tau_{β}')}|\vec{R'}+\tau_{β}>$
 
->Here $τ_{A}=0$,$ τ_{B}=τ$, and $\vec{R}$ is summed over the triangular Bravais lattice.
+>Here $\tau_{A}=0$,$ \tau_{B}=\tau$, and $\vec{R}$ is summed over the triangular Bravais lattice.
 Substituting Eqs. 2 and 3 in Eq. 1 and invoking the twocenter approximation,
-$<\vec{R}+\tau_{α}|H_{T}|\vec{R'}+τ_{α}-\vec{R'}-τ'_{β}>$
+$<\vec{R}+\tau_{α}|H_{T}|\vec{R'}+\tau_{α}-\vec{R'}-\tau'_{β}>$
 for the interlayer hopping amplitude in which t depends on the difference between the positions of the two carbon atoms we find that
 >
->$T_{\vec{k}\vec{p'}}^{αβ}=∑_{\vec{G_{1}}\vec{G_{2}}}\frac{t_{\overline{k}+\vec{G}}}{Ω}e^{i[\vec{G_{1}}τ_{α}-\vec{G_2}(τ_{β}-τ)-\vec{G'_{2}}\vec{d}]}δ_{\overline{k}+\vec{G_{1}},\overline{p'}+\vec{G'_{2}}}$
->
+>$T_{\vec{k}\vec{p'}}^{αβ}=∑_{\vec{G_{1}}\vec{G_{2}}}\frac{t_{\overline{k}+\vec{G}}}{Ω}e^{i[\vec{G_{1}}\tau_{α}-\vec{G_2}(\tau_{β}-\tau)-\vec{G'_{2}}\vec{d}]}δ_{\overline{k}+\vec{G_{1}},\overline{p'}+\vec{G'_{2}}}$
+
+译:
+
+在这里，$\tau_{A}=0$，$\tau_{B}=\tau$，$\vec{R}$ 在三角布拉维格子上求和。
+将式2和式3代入式1并调用双中心近似中的
+$<\vec{R}+\tau_{α}|H_{T}|\vec{R'}+\tau_{α}-\vec{R'}-\tau'{β}>$
+表示层间跃迁振幅，
+其中$t$取决于两个碳原子的位置差异，
+我们发现
+
+$T{\vec{k}\vec{p'}}^{αβ}=∑_{\vec{G_{1}}\vec{G_{2}}}\frac{t_{\overline{k}+\vec{G}}}{Ω}e^{i[\vec{G_{1}}\tau_{α}-\vec{G_2}(\tau_{β}-\tau)-\vec{G'{2}}\vec{d}]}δ{\overline{k}+\vec{G_{1}},\overline{p'}+\vec{G'_{2}}}$。{#eq5}
+
+
 >Here Ω is the unit cell area, 
 $t_{\vec{q}}$
 is the Fourier transform of the tunneling amplitude 
@@ -570,5 +582,158 @@ $$
 是反流速度算符的x分量(我们将电场设置在x轴上)，
 $G_{k\mu}^{r}(\omega)=(\omega-\epsilon_{k\mu}^{\star}+i/2\tau_{0})^{-1}$ 是带有 
 $\mu$ 标签的逆变换格林函数，表示两个Dirac带的能量色散，
-$\epsilon_{k\mu}^{\star}=\mu v^{\star}k
-$是小动量条件下转角双层石墨烯的能量色散。
+$\epsilon_{k\mu}^{\star}=\mu v^{\star}k$
+是小动量条件下转角双层石墨烯的能量色散。
+
+>For an electron-doped system the valence band can be neglected and
+>
+>$\sigma_{CF}\approx e^2g\tau\nu^{\star}(\epsilon_{F})\int\frac{d\theta_{k}}{2\pi}|\langle\psi_{k\mu}|\nu_{CF}^{x}|\psi_{k\mu}\rangle|^2$
+>
+>where $v^{\star}$ is the DOS of the twisted bilayer.The vertex function
+>
+>$\langle\psi_{k}|v_{CF}^{x}|\psi_{k}\rangle=v_{CF}\cos{\theta_{k}}$,
+>
+>where $v_{CF}=v(1+3\alpha^2)/(1+6\alpha^2)$ follows directly from the previous section if we notice the sign differences between the counterflow velocity operator and the normal velocity operator. The counterflow conductivity is then
+>
+>$\sigma_{CF}=\sigma_{0}(\frac{v_{CF}}{v^{\star}})^2$
+>
+>where $\sigma_{0}~e^2\epsilon_{F}\tau/\pi$ is the conductivity of an isolated single graphene layer. 
+As $\theta$ is reduced from a large value toward 1°, $v^{\star}$ is reduced and the DOS is correspondingly increased. 
+The counterflow conductivity is enhanced because of an increased density of carriers, which is not accompanied by a decrease in counterflow velocity. 
+For a conventional measurement in which the current in the bilayer is unidirectional $v_{CF}$ in Eq. 16 is replaced by $v^{\star}$. 
+The increase in the DOS is then exactly compensated by the reduction of the renormalized velocity and the single-layer value of the conductivity is regained.
+
+译:
+
+对于一个电子掺杂的系统，可以忽略价带，并且
+
+$\sigma_{CF}\approx e^2g\tau\nu^{\star}(\epsilon_{F})\int\frac{d\theta_{k}}{2\pi}|\langle\psi_{k\mu}|\nu_{CF}^{x}|\psi_{k\mu}\rangle|^2$
+
+其中，$v^{\star}$ 是双层扭转石墨烯的态密度。顶点函数
+
+$\langle\psi_{k}|v_{CF}^{x}|\psi_{k}\rangle=v_{CF}\cos{\theta_{k}}$,
+
+其中，$v_{CF}=v(1+3\alpha^2)/(1+6\alpha^2)$ 直接从前面的章节得到，如果我们注意到反流速度算符和正常速度算符之间的符号差异。反流电导率为
+
+$\sigma_{CF}=\sigma_{0}(\frac{v_{CF}}{v^{\star}})^2$
+
+其中，$\sigma_{0}~e^2\epsilon_{F}\tau/\pi$ 是单层石墨烯的电导率.
+当 $\theta$ 从一个大的值减小到1°时，$v^{\star}$ 减小，态密度相应增加。
+反流电导因载流子密度的增加而增加，而不伴随相对流速的减小。
+对于常规测量，其中双层石墨烯中的电流是单向的，式子16中的 $v_{CF}$ 被 $v^{\star}$ 取代。
+态密度的增加被粒子速度的减小所精确补偿，单层的电导率得以恢复。
+
+### Dependence of the Spectrum on $\vec{d}$
+
+>We now show that the spectrum of misaligned bilayers is independent of linear translations of one layer with respect to the other using a unitary transformation that makes the Hamiltonian independent of $\vec{d}$. 
+Consider $H_{\vec{Q}}$ where $\vec{Q}$ is a momentum in the first moiré Brillouin zone. 
+With each momentum on the $k$-space triangular Bravais lattice (see Fig. 1)
+>
+>$\vec{k}=\vec{Q}+n\vec{q_1}+m\vec{q_2}$,
+>
+>where $\vec{q_1}=k_{\theta}(\frac{1}{2},\frac{\sqrt{3}}{2})$ 
+and 
+$\vec{q_2}=k_{\theta}(-\frac{1}{2},\frac{\sqrt{3}}{2})$, we associate the phase
+>
+>$\Phi^{k}=n\vec{G'}_{2}\cdot\vec{d}+m\vec{G'}_{3}\cdot\vec{d}$.
+>
+>The phase associated with momentum $\vec{k}-\vec{k}_{\theta}\hat{y}$ on the other sublattice is $\Phi_{\vec{k}}$ as well. 
+In terms of the new basis states $e^{i\Phi_{\vec{k}}}|\vec{k}\alpha\rangle$ the Hamiltonian $H_{\vec{Q}}$ is $d$-independent.
+>
+>Physically, the lack of dependence on $\vec{d}$ can be understood by noticing that varying $\vec{d}$ just shifts the moiré pattern in space. 
+The bilayer spectrum does depend on $\vec{d}$ at $\theta=0$, and at other commensurate angles. 
+We expect that dependence on $\vec{d}$ will be observable only at short period (large $\theta$) commensurate angles.
+
+译:
+
+我们现在证明错位双层体系的能谱与其中一层的线性平移无关，通过一个幺正变换使得哈密顿量不依赖于 $\vec{d}$。
+考虑动量 $\vec{Q}$ 在第一个摩尔布里渊区的哈密顿量 $H_{\vec{Q}}$ 。
+对于每个 $k$ 空间三角布拉维格子上的动量（见图1）
+
+$\vec{k}=\vec{Q}+n\vec{q_1}+m\vec{q_2}$,
+
+其中
+$\vec{q_1}=k_{\theta}(\frac{1}{2},\frac{\sqrt{3}}{2})$，$\vec{q_2}=k_{\theta}(-\frac{1}{2},\frac{\sqrt{3}}{2})$,我们关联相位
+
+$\Phi^{k}=n\vec{G'}{2}\cdot\vec{d}+m\vec{G'}{3}\cdot\vec{d}$。
+
+在另一个亚晶格上，关联于动量 $\vec{k}-\vec{k}{\theta}\hat{y}$ 的相位同样是
+$\Phi{\vec{k}}$ 。
+在新的基态 $e^{i\Phi_{\vec{k}}}|\vec{k}\alpha\rangle$ 下，
+哈密顿量 $H_{\vec{Q}}$ 并非 $\vec{d}$ 的函数。
+
+物理上，不依赖于 $\vec{d}$ 可以理解为改变 $\vec{d}$ 只是在空间中平移moire图案。
+只有在 $\theta=0$ 和其他共格角度时，双层能谱才会取决于 $\vec{d}$。
+我们预计只有在短周期（即大 $\theta$）的共格角度时，才能观察到 $\vec{d}$ 的依赖性。
+
+>**共格角度Commensurate Angles**
+>
+>在物理学中，两个周期性结构的共格是指它们之间存在匹配的空间排列方式。如果两个晶格的晶格常数和晶向满足特定的关系，则它们的共格就被称为共格结构，这个特定的关系被称为“共格条件”。如果两个周期性结构的共格条件不被满足，它们之间的匹配就被称为“不共格”（incommensurate）。
+>
+>对于双层石墨烯，当两层图案之间的角度非常接近特定角度时，双层石墨烯就会表现出一些特殊的物理性质，比如出现了长周期的moire图案和扭曲的带结构。这些特殊的角度被称为共格角度（commensurate angles），因为在这些角度下，两层之间的moire图案可以完美地对齐，形成一种共格结构。
+
+---
+
+## Discussion
+>Twisted double-layer graphene is, for most values of $\theta$, a quasiperiodic structure that has no unit cell. 
+Nevertheless, we find that for $\theta ≲ 10°$ it is meaningful to describe the electronic structure of the system in terms of Bloch bands. 
+The hidden periodic structure is shown to be related to the moiré pattern of the overlaid layers (27).
+>
+>The leading corrections to the periodic moiré band Hamiltonian involve hopping amplitudes with the smallest momenta $\vec{g}$ that satisfy the crystal momentum conservation condition in Eq. 5 and are larger than $k_{D}$ . 
+As we showed in ref. 19, real space commensuration between the two rotated hexagonal lattice is concomitant to momentum space commensuration of the Dirac points in the extended-zone scheme (see figures 2 and 3 in ref. 19). 
+The commensurate vector $\vec{g}$ can therefore be found using the formula for the moiré periodicity 
+if the lattice vector of $\sqrt{3}a$ (where a is the carbon-carbon distance in a single-layer graphene) is replaced by the reciprocal lattice vector $G$ . 
+It follows that $g(\theta)\approx G/\theta$. 
+For example $g(10°)=24/a$ and $g(2°)$ .
+As Fig. 2 demonstrates, the hopping amplitudes for these large wave vectors are indeed negligible compared to the value of $t_{k_{D}}$ .
+We therefore expect the continuum model to be very accurate up to energies of approximately $1 eV$ and up to angles of approximately $10°$.
+
+译:
+
+在大多数 $\theta$ 值下,扭转双层石墨烯都是一种无定晶胞的准周期结构。
+然而，我们发现对于 $\theta ≲ 10°$ ，用布洛赫能带描述系统的电子结构很有意义。
+隐藏的周期性结构被证明与重叠层的moire图案有关(27)。
+
+对周期性moire带哈密顿量的主要修正是这样的:跃迁振幅对应的动量,要同时满足三个条件,即(1)晶体动量守恒条件(方程[5](#eq5));(2)大于 $k_{D}$;(3)满足(1),(2)的同时要尽可能最小.
+
+正如我们在参考文献19中所示，转角双层石墨烯结构的实空间共格现象 与 扩展区方案中Dirac点动量空间共格现象是一致的（参见参考文献19中的图2和图3）。
+因此，如果将 $\sqrt{3}a$ 的晶格矢量（其中a是单层石墨烯中的碳-碳距离）替换为倒易晶格矢量$G$，就可以使用moire周期公式找到共格矢量 $\vec{g}$。于是就有$g(\theta)\approx G/\theta$。例如，$g(10°)=24/a$和$g(2°)$。
+
+正如图2所示，对于这些大波矢，跃迁振幅确实与 $t_{k_{D}}$ 的值相比微不足道。
+所以我们预计,连续模型在能量达到约 $1eV$ 且 角度达到约 $10°$ 时非常精确。
+
+>The Bloch band model has a simple and appealing physical interpretation. 
+The hopping Hamiltonian is local in space. 
+At each position, its 4 × 4 matrix, describes sublattice-dependent interlayer hopping, which depends on the local coordination between the atoms in the two layers. 
+In Fig. 5 we have plotted the moiré pattern of atomic positions and the smaller of the two positive eigenvalues of the hopping Hamiltonian as a function of position on the same length scale. 
+At each position, the local interlayer tunneling Hamiltonian, is that of a system in which the local coordination is maintained through all space. 
+At AB and BA points, for example, the tunneling Hamiltonian is that of AB and BA systems, for which tunneling does not produce a gap so that the smallest positive eigenvalue vanishes. 
+On the other hand the gap reaches its maxima ($6w$) at AA points in the moiré pattern.
+>
+>In summary we have formulated a continuum model description of the electronic structure of rotated graphene bilayers. 
+The resulting moiré band structure can be evaluated at arbitrary twist angles, not only at commensurate values. 
+We find that the velocity at the Dirac point oscillates with twist angle, vanishing at a series of magic angles which give rise to large DOS and to large counterflow conductivities. 
+Many properties of the moiré bands are still not understood. 
+For example, although we are able to explain the largest magic angle analytically, the pattern of magic angles at smaller values of θ has so far been revealed only numerically. 
+Additionally the flattening of the entire lowest moiré band at $\theta\approx 1.05°$ remains a puzzle. 
+Interesting new issues arise when our theory is extended to graphene stacks containing three or more layers. 
+Finally, we remark that electron-electron interactions neglected in this work are certain to be important at magic twist angles in neutral systems and could give rise to counterflow superfluidity (28, 29), flat-band magnetism (30), or other types of ordered states.
+
+译:
+
+Bloch带模型有一个简单而有吸引力的物理解释。
+跃迁哈密顿量在空间上是局域的。
+在每个位置，它的$ 4\times4$ 矩阵描述了亚晶格相关的层间跃迁，这取决于两层原子之间的局部配位。
+在图5中，我们绘制了原子位置的moire图案和跃迁哈密顿量的两个最小正本征值，它们在相同的长度尺度上随位置变化。
+在每个位置上，局部层间隧道哈密顿量都是保持空间中所有位置的局部配位不变的系统的哈密顿量。
+例如，在AB点和BA点，隧道哈密顿量是AB和BA系统的哈密顿量，在这些系统中，隧道跃迁不会产生能隙，因此最小正本征值为零。
+另一方面，能隙在moire图案的AA点处达到最大值（$6w$）。
+
+总之，我们已经制定了一个连续模型来描述旋转石墨烯双层体系的电子结构。
+得到的moire带结构可以在任意扭角下进行评估，而不仅仅是在共格值处。
+我们发现，在Dirac点处的速度随扭角振荡，在一系列魔角处消失，这产生了大的态密度和大的反流电导率。
+moire带的许多性质仍然不为人们所理解。
+例如，虽然我们能够解释最大的魔角，但在较小的 $\theta$ 值处的魔角模式到目前为止只能通过数值方法揭示。
+此外，在 $\theta\approx 1.05°$ 处的整个最低moire带的平坦化仍然是一个谜。
+当我们的理论扩展到包含三个或更多层的石墨烯堆叠时，会出现一些有趣的新问题。
+最后，我们指出，本文忽略的电子间相互作用在中性系统的魔角处肯定是重要的，并且可能会产生反流超流动性、平带磁性或其他类型的有序状态(28,29,30)。
