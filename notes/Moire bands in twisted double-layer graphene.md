@@ -97,7 +97,7 @@ We choose the coordinate system depicted in Fig. 1 for which the decoupled bilay
 $$
 v_k=vk\begin{bmatrix} 
 0 & e^{i(θ_{k}-θ)}\\
-e^{i(θ_{k}-θ)} & 0\\ 
+e^{-i(θ_{k}-θ)} & 0\\ 
 \end{bmatrix}
 $$.
 
@@ -125,7 +125,7 @@ $|\Psi_{\vec{p}β}^{(2)}=\frac{1}{\sqrt{N}}∑_{\vec{R'}}e^{i\vec{p}(R'+\tau_{β
 $H_{T}$
 的矩阵元素
 
-$T_{\vec{k}\vec{p'}}^{αβ}=\langle Ψ_{\vec{k}}^{(1)}|H_{T}|Ψ_{\vec{p'}β}^{(2)}\rangle $
+$T_{\vec{k}\vec{p'}}^{αβ}=\langle Ψ_{\vec{k}\alpha}^{(1)}|H_{T}|Ψ_{\vec{p'}β}^{(2)}\rangle $
 
 描述了一个过程, 其中一个具有
 $\vec{p'}=M\vec{p}$
@@ -134,11 +134,13 @@ $\vec{k}$
 和子晶格α上. 
 在一个π带紧-结合模型中, 两层的波函数对一个给定的子晶格的投射为
 
-$|\Psi_{\vec{k}α}^{(1)}=\frac{1}{\sqrt{N}}∑_{\vec{R}}e^{i\vec{k}(R+\tau_{α})}|\vec{R}+\tau_{α}>$ and $|\Psi_{\vec{p}β}^{(2)}=\frac{1}{\sqrt{N}}∑_{\vec{R'}}e^{i\vec{p}(R'+\tau_{β}')}|\vec{R'}+\tau_{β}>$
+$|\Psi_{\vec{k}α}^{(1)}\rangle=\frac{1}{\sqrt{N}}∑_{\vec{R}}e^{i\vec{k}(R+\tau_{α})}|\vec{R}+\tau_{α}\rangle$ 
+和 
+$|\Psi_{\vec{p}β}^{(2)}\rangle=\frac{1}{\sqrt{N}}∑_{\vec{R'}}e^{i\vec{p}(R'+\tau_{β}')}|\vec{R'}+\tau_{β}\rangle$
 
 >Here $\tau_{A}=0$,$ \tau_{B}=\tau$, and $\vec{R}$ is summed over the triangular Bravais lattice.
 Substituting Eqs. 2 and 3 in Eq. 1 and invoking the twocenter approximation,
-$<\vec{R}+\tau_{α}|H_{T}|\vec{R'}+\tau_{α}-\vec{R'}-\tau'_{β}>$
+$\langle\vec{R}+\tau_{α}|H_{T}|\vec{R'}+\tau_{α}-\vec{R'}-\tau'_{β}\rangle$
 for the interlayer hopping amplitude in which t depends on the difference between the positions of the two carbon atoms we find that
 >
 >$T_{\vec{k}\vec{p'}}^{αβ}=∑_{\vec{G_{1}}\vec{G_{2}}}\frac{t_{\overline{k}+\vec{G}}}{Ω}e^{i[\vec{G_{1}}\tau_{α}-\vec{G_2}(\tau_{β}-\tau)-\vec{G'_{2}}\vec{d}]}δ_{\overline{k}+\vec{G_{1}},\overline{p'}+\vec{G'_{2}}}$
@@ -147,15 +149,15 @@ for the interlayer hopping amplitude in which t depends on the difference betwee
 
 在这里，$\tau_{A}=0$，$\tau_{B}=\tau$，$\vec{R}$ 在三角布拉维格子上求和。
 将式2和式3代入式1并调用双中心近似中的
-$<\vec{R}+\tau_{α}|H_{T}|\vec{R'}+\tau_{α}-\vec{R'}-\tau'{β}>$
+$\langle\vec{R}+\tau_{α}|H_{T}|\vec{R'}+\tau_{α}-\vec{R'}-\tau'_{β}\rangle$
 表示层间跃迁振幅，其中$t$取决于两个碳原子的位置差异.
 
 我们发现
 
-$T{\vec{k}\vec{p'}}^{αβ}=∑_{\vec{G_{1}}\vec{G_{2}}}\frac{t_{\overline{k}+\vec{G}}}{Ω}e^{i[\vec{G_{1}}\tau_{α}-\vec{G_2}(\tau_{β}-\tau)-\vec{G'{2}}\vec{d}]}δ{\overline{k}+\vec{G_{1}},\overline{p'}+\vec{G'_{2}}}$。{#eq5}
+$T_{\vec{k}\vec{p'}}^{αβ}=∑_{\vec{G_{1}}\vec{G_{2}}}\frac{t_{\overline{k}+\vec{G}}}{Ω}e^{i[\vec{G_{1}}\tau_{α}-\vec{G_2}(\tau_{β}-\tau)-\vec{G'_{2}}\vec{d}]}δ_{\overline{k}+\vec{G_{1}},\overline{p'}+\vec{G'_{2}}}$.{#eq5}
 
 
->Here Ω is the unit cell area, 
+>Here $Ω$ is the unit cell area, 
 $t_{\vec{q}}$
 is the Fourier transform of the tunneling amplitude 
 $t(\vec{r})$, the vectors 
@@ -169,7 +171,7 @@ depends only on the difference between lattice positions.
 
 译:
 
-这里Ω是单位晶胞面积, 
+这里$Ω$是单位晶胞面积, 
 $t_{\vec{q}}$
 是层间跃迁振幅
 $t(\vec{r})$
@@ -180,6 +182,7 @@ $\vec{G_{2}}$
 是倒数晶格向量的总和, 
 $\vec{G'_{2}}=M\vec{G_{2}}$.
 公式5中动量的上划线表示:动量是相对于布里渊区的中心而不是相对于狄拉克点(能带零点)测量的. 
+
 注意:晶体动量在层间跃迁过程中是守恒的, 因为$t$只取决于晶格位置的差异.
 
 >The continuum model for 
@@ -199,6 +202,7 @@ $H_{T}$
 的**连续模型**就可以通过测量两层中相对于其狄拉克点的波矢量(同时假设它与布里渊区尺寸相比偏差很小)得到. 
 该模型的效用集中体现在这样的观察上：
 即使$t_{q}$并不精确, 但它应该随着倒格子矢量尺度上的$q$增大而迅速下降到零.
+
 这一行为来自于石墨烯层的分离度
 $d_{\perp}$
 超过层内碳原子之间分离度2倍以上的特性.
@@ -234,6 +238,7 @@ $R=sqrt{r^2+d_{perp}^2}$
 的变化而变化, 所以强的小的$r$跳跃过程在
 $d_{perp}$
 的尺度上随$r$变化.
+
 因此, 
 $t_{q}$
 在
@@ -415,7 +420,8 @@ We have numerically verified that this approximation reproduces the velocity wit
 
 如果采用最简单的截断方法(即选取动量空间晶格中的第一个蜂巢壳处)来取极限, 
 我们可以对这些特性的起源有部分了解. 
-将子晶格的自由度也考虑在内，这种截断就产生了哈密顿量的表达式
+
+将子晶格的自由度也考虑在内，这种截断就产生了哈密顿量的表达式:
 
 $$
 \mathcal{H}_{\vec{k}}=\begin{bmatrix} 
@@ -430,18 +436,20 @@ $$,
 $\vec{k}$
 处于摩尔布里渊区，
 $\vec{k}_{j}=\vec{k}+\vec{q}_{j}$。 
+
 这个哈密顿量作用于四个双分量自旋子
 $\Psi=(\psi_{0},\psi_{1},\psi_{2},\psi_{3})$。 
-第一个（$\psi_{0}$）是在一个某层石墨烯狄拉克点附近的动量，
-其他三个
+第一个（$\psi_{0}$）是在一个某层石墨烯狄拉克点附近的动量，其他三个
 $\psi_{j}$
 则是在
 $\vec{q}_{j}$
 附近的动量,
 位置则是在另一层石墨烯中。 
+
 $h(\theta)$
 对角度的依赖性在参数上很小,所以可以忽略不计。 
-我们已经用数值验证了,这种近似方法直到第一个魔转角都能以合理的精度重现了速度.（图4，插图）。
+
+我们已经用数值验证了,这种近似方法直到第一个魔转角都能以合理的精度重现了速度.（图4）。
 
 >The renormalized velocity $v^{\star}=\partial_{\vec{k}}\epsilon_{\vec{k}}^{\star}|_{\vec{k}=0}$ follows from the spectrum 
 $\epsilon_{\vec{k}}^{\star}$ 
@@ -462,7 +470,8 @@ The zero energy eigenstates must satisfy
 我们可以从转角双层石墨烯的能谱
 $\epsilon_{\vec{k}}^{\star}$
 得到重整化后的速度
-$v^{\star}=\partial_{\vec{k}}\epsilon_{\vec{k}}^{\star}|{\vec{k}=0}$。
+$v^{\star}=\partial_{\vec{k}}\epsilon_{\vec{k}}^{\star}|_{\vec{k}=0}$。
+
 该哈密顿量被表示为
 $\vec{k}=0$
 的项
@@ -472,12 +481,14 @@ $\mathcal{H}{\vec{k}}^{(1)}$
 的和，并在
 $\vec{k}$
 的级数展开上求解。
+
 我们考虑哈密顿量中的
 $\vec{k}=0$
 项.
 我们假设
 $\mathcal{H}^{(0)}$
 有零能量的本征态(我们将找到这些态以证明这个假设)。
+
 零能量本征态必须满足:
 
 $\psi_{j}=-h_{j}^{-1}T_{j}^{\dagger}\psi_{0}$。[9]
@@ -510,16 +521,22 @@ The effective Hamiltonian matrix to leading order in $k$ is therefore
 
 $T_{j}h_{j}^{-1}T_{j}^{\dagger}=0$，
 
-因此
-$\psi_{0}$ 的自旋轨道满足 $h_{0}\psi_{0}=0$，
+因此 $\psi_{0}$ 的自旋轨道满足 $h_{0}\psi_{0}=0$，
 即 $\psi_{0}$ 是孤立层的两个零能态 $\psi_{0}^{(1)}$ 和 $\psi_{0}^{(2)}$ 之一。
-然后，根据式子[9]，可以得到 $\mathcal{H}^{(0)}$ 的两个零能量本征态。
-考虑到 $|\psi_0^{(j)}|=1$，波函数应当通过 $|\Psi|^{2}=1+6\alpha^2$
-进行归一化。因此，在$k$的一阶导数方面的有效哈密顿矩阵为：
 
-$\langle\Psi^{(i)}|\mathcal{H}_{\vec{k}}^{(1)}|\Psi^{(j)}\rangle=$
-$\frac{-v}{1+6\alpha^2}\psi_{0}^{(j)\dagger}[\sigma\cdot\vec{k}+w^2\sum_{j}T_{j}h_{j}^{-1\dagger}\sigma\cdot\vec{k}h_{j}^{-1}T_{j}^{\dagger}]\psi_{0}^{(j)}$
-$=-v^{\star}\psi_{0}^{(j)\dagger}\sigma\cdot\vec{k}\psi_{0}^{(j)}$.
+然后，根据式子[9]，可以得到 $\mathcal{H}^{(0)}$ 的两个零能量本征态。
+
+考虑到 $|\psi_0^{(j)}|=1$，波函数应当通过 $|\Psi|^{2}=1+6\alpha^2$
+进行归一化。
+
+因此，在$k$的一阶导数方面的有效哈密顿矩阵为：
+
+$$
+\langle\Psi^{(i)}|\mathcal{H}_{\vec{k}}^{(1)}|\Psi^{(j)}\rangle=
+
+\frac{-v}{1+6\alpha^2}\psi_{0}^{(j)\dagger}[\sigma\cdot\vec{k}+w^2\sum_{j}T_{j}h_{j}^{-1\dagger}\sigma\cdot\vec{k}h_{j}^{-1}T_{j}^{\dagger}]\psi_{0}^{(j)}
+=-v^{\star}\psi_{0}^{(j)\dagger}\sigma\cdot\vec{k}\psi_{0}^{(j)}
+$$.
 
 >Aside from a renormalized velocity
 >
@@ -668,15 +685,16 @@ We expect that dependence on $\vec{d}$ will be observable only at short period (
 译:
 
 我们现在证明错位双层体系的能谱与其中一层的线性平移无关，通过一个幺正变换使得哈密顿量不依赖于 $\vec{d}$。
+
 考虑动量 $\vec{Q}$ 在第一个摩尔布里渊区的哈密顿量 $H_{\vec{Q}}$ 。
-对于每个 $k$ 空间三角布拉维格子上的动量（见图1）
+对于每个 $k$ 空间三角布拉维格子上的动量为（见图1）
 
 $\vec{k}=\vec{Q}+n\vec{q_1}+m\vec{q_2}$,
 
 其中
 $\vec{q_1}=k_{\theta}(\frac{1}{2},\frac{\sqrt{3}}{2})$，$\vec{q_2}=k_{\theta}(-\frac{1}{2},\frac{\sqrt{3}}{2})$,我们关联相位
 
-$\Phi^{k}=n\vec{G'}{2}\cdot\vec{d}+m\vec{G'}{3}\cdot\vec{d}$。
+$\Phi^{k}=n\vec{G'}_{2}\cdot\vec{d}+m\vec{G'}_{3}\cdot\vec{d}$。
 
 在另一个亚晶格上，关联于动量 $\vec{k}-\vec{k}{\theta}\hat{y}$ 的相位同样是
 $\Phi{\vec{k}}$ 。
@@ -685,6 +703,7 @@ $\Phi{\vec{k}}$ 。
 
 物理上，不依赖于 $\vec{d}$ 可以理解为改变 $\vec{d}$ 只是在空间中平移moire图案。
 只有在 $\theta=0$ 和其他共格角度时，双层能谱才会取决于 $\vec{d}$。
+
 我们预计只有在短周期（即大 $\theta$）的共格角度时，才能观察到 $\vec{d}$ 的依赖性。
 
 >**共格角度Commensurate Angles**
@@ -718,9 +737,11 @@ We therefore expect the continuum model to be very accurate up to energies of ap
 对周期性moire带哈密顿量的主要修正是这样的:跃迁振幅对应的动量,要同时满足三个条件,即(1)晶体动量守恒条件(方程[5](#eq5));(2)大于 $k_{D}$;(3)满足(1),(2)的同时要尽可能最小.
 
 正如我们在参考文献19中所示，转角双层石墨烯结构的实空间共格现象 与 扩展区方案中Dirac点动量空间共格现象是一致的（参见参考文献19中的图2和图3）。
-因此，如果将 $\sqrt{3}a$ 的晶格矢量（其中a是单层石墨烯中的碳-碳距离）替换为倒易晶格矢量$G$，就可以使用moire周期公式找到共格矢量 $\vec{g}$。于是就有$g(\theta)\approx G/\theta$。例如，$g(10°)=24/a$和$g(2°)$。
+因此，如果将 $\sqrt{3}a$ 的晶格矢量（其中a是单层石墨烯中的碳-碳距离）替换为倒易晶格矢量$G$，就可以使用moire周期公式找到共格矢量 $\vec{g}$。
 
-正如图2所示，对于这些大波矢，跃迁振幅确实与 $t_{k_{D}}$ 的值相比微不足道。
+于是就有 $g(\theta)\approx G/\theta$。例如，$g(10°)=24/a$和$g(2°)$。
+
+正如图2所示，对于这些大波矢，跃迁振幅与 $t_{k_{D}}$ 的值相比确实微不足道。
 所以我们预计,连续模型在能量达到约 $1eV$ 且 角度达到约 $10°$ 时非常精确。
 
 >The Bloch band model has a simple and appealing physical interpretation. 
@@ -744,15 +765,20 @@ Finally, we remark that electron-electron interactions neglected in this work ar
 
 Bloch带模型有一个简单而有吸引力的物理解释。
 跃迁哈密顿量在空间上是局域的。
+
 在每个位置，它的 $ 4\times 4$ 矩阵描述了亚晶格相关的层间跃迁，这取决于两层原子之间的局部配位。
+
 在图5中，我们绘制了原子位置的moire图案和跃迁哈密顿量的两个最小正本征值，它们在相同的长度尺度上随位置变化。
+
 在每个位置上，局部层间隧道哈密顿量都是保持空间中所有位置的局部配位不变的系统的哈密顿量。
+
 例如，在AB点和BA点，隧道哈密顿量是AB和BA系统的哈密顿量，在这些系统中，隧道跃迁不会产生能隙，因此最小正本征值为零。
 另一方面，能隙在moire图案的AA点处达到最大值（$6w$）。
 
 总之，我们已经制定了一个连续模型来描述旋转石墨烯双层体系的电子结构。
 得到的moire带结构可以在任意扭角下进行评估，而不仅仅是在共格值处。
-我们发现，在Dirac点处的速度随扭角振荡，在一系列魔角处消失，这产生了大的态密度和大的反流电导率。
+
+我们发现，在Dirac点处的速度随旋转角增大而振荡，在一系列魔角处消失，这产生了大的态密度和大的反流电导率。
 moire带的许多性质仍然不为人们所理解。
 例如，虽然我们能够解释最大的魔角，但在较小的 $\theta$ 值处的魔角模式到目前为止只能通过数值方法揭示。
 此外，在 $\theta\approx 1.05°$ 处的整个最低moire带的平坦化仍然是一个谜。
