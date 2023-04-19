@@ -10,9 +10,12 @@ For a discrete set of magic angles the velocity vanishes, the lowest moiré band
 
 译:
 
-当一个周期性图案的两个副本以相对扭曲的方式叠加在一起时, 就会形成摩尔纹图案.
+当一个周期性图案的两个副本以一定扭转角的方式叠加在一起时, 就会形成摩尔纹图案.
+
 我们讨论了扭曲的两层石墨烯系统的电子结构, 表明在其连续的狄拉克模型中, 摩尔纹的周期性导致了摩尔布洛赫带.
+
 两层石墨烯变得更加强烈的耦合, 并且随着扭曲角度的减小, 狄拉克速度多次过零.
+
 对于一组离散的魔角, 速度消失, 最低的摩尔带变平, 迪拉克点状态密度和逆流电导率强烈增强.
 
 >Low-energy electronic properties of few layer graphene (FLG)
@@ -23,7 +26,10 @@ In bulk graphite 0° and 60° relative orientations of the individual layer hone
 译:
 
 众所周知（1-8）, 少层石墨烯（FLG）系统的能量电子特性在很大程度上取决于堆叠排列.
-在散装石墨中, 单个层蜂窝状晶格的0°和60°相对方向产生斜方体和贝纳尔晶体, 但其他扭曲角也出现在许多样品中（9）.在SiC上生长的外延石墨烯层中, 小扭曲角特别多（10, 11）, 但剥离的双层也会出现扭曲, 而且相邻层之间的任意排列可以通过折叠单个石墨烯层获得（12, 13）.
+
+在散装石墨中, 单个层蜂窝状晶格的0°和60°相对方向产生斜方体和贝纳尔晶体, 但其他扭曲角也出现在许多样品中（9）.
+
+在SiC上生长的外延石墨烯层中, 小扭曲角特别多（10, 11）, 但剥离的双层也会出现扭曲, 而且相邻层之间的任意排列可以通过折叠单个石墨烯层获得（12, 13）.
 
 >**贝纳尔晶体**
 >
@@ -38,8 +44,10 @@ In this work we find it convenient to regard the AB stacking as the aligned conf
 译:
 
 最近FLG制备方法的进展, 吸引了理论界对任意扭曲角下系统的有趣电子特性的关注(14-20).(特别是双层系统的情况)
+
 双层系统的几何特征是由扭曲角θ和平移矢量d决定的.在这项工作中, 我们发现将AB堆叠视为对齐的配置是很方便的.
-在两个错位的层中, 碳原子的位置由R和R'标记, 然后由 $\vec{R'}=M(θ)(\vec{R}-\tau)+\vec{d}$ 公式进行关联, 其中M是石墨烯平面内的2维旋转矩阵, $\tau$是连接单元格中两个原子的矢量.
+
+在两个错位的层中, 碳原子的位置由R和R'标记, 然后由 $\vec{R'}=M(θ)(\vec{R}-\tau)+\vec{d}$ 公式进行关联, 其中M是石墨烯平面内的2维旋转矩阵, $\tau$ 是连接单元格中两个原子的矢量.
 
 >The problem is mathematically interesting because a bilayer forms a two-dimensional crystal only at a discrete set of commensurate rotation angles; 
 for generic twist angles Bloch’s theorem does not apply microscopically and direct electronic structure calculations are not feasible. 
@@ -48,7 +56,9 @@ As the twist angles become smaller, interlayer coupling strengthens, and the qua
 
 译:
 
-这个问题在数学上是有趣的, 因为双层晶体只在一组**离散的**相称旋转角下形成；对于一般的扭转角, 布洛赫定理在显微镜下并不适用, 直接的电子结构计算是不可行的.对于大于几度的扭转角, 除了在一小部分产生低阶相称结构的角度外, 两层的电子隔离程度很高（16, 19）.随着扭曲角的变小, 层间耦合加强, 迪拉克点的准粒子速度开始下降.
+这个问题在数学上是有趣的, 因为双层晶体只在一组**离散的**相称旋转角下形成；对于一般的扭转角, 布洛赫定理在显微镜下并不适用, 直接的电子结构计算是不可行的.
+
+对于大于几度的扭转角, 除了在一小部分产生低阶相称结构的角度外, 两层的电子隔离程度很高（16, 19）.随着扭曲角的变小, 层间耦合加强, 迪拉克点的准粒子速度开始下降.
 
 ~~人话:~~
 
@@ -59,13 +69,15 @@ As the twist angles become smaller, interlayer coupling strengthens, and the qua
 译:
 
 在此, 我们重点讨论强耦合的小扭曲角机制.
+
 我们推导出了一个低能量条件下的有效哈密顿量(对任何d值和θ≲10°都有效,无论双层结构是否是周期性的).
+
 我们证明, 即使对于不相称的扭转角, 用布洛赫带描述电子结构也是有意义的, 并研究了这些能带对θ的依赖性.
 
 ---
 ## Model
 
->We construct a low-energy continuum model Hamiltonian that consists of three terms: two single-layer Dirac–Hamiltonian terms that account for the isolated graphene sheets and a tunneling term that describes hopping between layers. The Dirac–Hamiltonian (21) for a layer rotated by an angle θ with respect to a fixed coordinate system is
+>We construct a low-energy continuum model Hamiltonian that consists of three terms: two single-layer Dirac–Hamiltonian terms that account for the isolated graphene sheets and a **tunneling term** that describes hopping between layers. The Dirac–Hamiltonian (21) for a layer rotated by an angle θ with respect to a fixed coordinate system is
 >
 >$$v_k=vk\begin{bmatrix}
 0 & e^{i(θ_{k}-θ)}\\
@@ -73,19 +85,27 @@ e^{i(θ_{k}-θ)} & 0\\
 \end{bmatrix}
 >$$
 >
->where v is the Dirac velocity, k is momentum measured from the layer’s Dirac point, θk is the momentum orientation relative to the x axis, and the spinor Hamiltonian acts on the individual layer’s A and B sublattice degrees-of-freedom. We choose the coordinate system depicted in Fig. 1 for which the decoupled bilayer Hamiltonian is $|1>h(θ/2)<1|+|2>h(-θ/2)<2|$, where $|i><i|$ projects onto layer $i$.
+>where v is the Dirac velocity, k is momentum measured from the layer’s Dirac point, $θ_k$ is the momentum orientation relative to the x axis, and the spinor Hamiltonian acts on the individual layer’s A and B sublattice degrees-of-freedom. 
+We choose the coordinate system depicted in Fig. 1 for which the decoupled bilayer Hamiltonian is $|1\rangle h(θ/2)\langle 1|+|2\rangle h(-θ/2)\langle 2|$, where $|i\rangle\langle i|$ projects onto layer $i$.
 
 译:
 
-我们构建了一个低能连续模型下的哈密顿量, 它由三个项组成：两个单层狄拉克-哈密顿项(代表孤立的石墨烯层), 一个"Tunneling"项(~~TUNNEL可以理解为隧穿的过程~~), 描述层间的跳跃.相对于固定坐标系, 旋转一个角度θ的层的狄拉克-哈米顿项（21）为$v_k=$ 
-$$vk\begin{bmatrix} 
+我们构建了一个**低能连续模型**下的哈密顿量, 它由三个项组成：两个单层狄拉克-哈密顿项(代表孤立的石墨烯层), 一个"Tunneling"项(~~TUNNEL可以理解为隧穿的过程~~), 描述层间的跳跃.
+
+相对于固定坐标系, 旋转一个角度θ的层的狄拉克-哈米顿项（21）为
+
+$$
+v_k=vk\begin{bmatrix} 
 0 & e^{i(θ_{k}-θ)}\\
 e^{i(θ_{k}-θ)} & 0\\ 
-\end{bmatrix}$$
-其中v是狄拉克速度,k是从层的狄拉克点测得的动量, θk是相对于X轴的动量方向, 自旋体哈密尔顿作用于各个层的A和B子晶格自由度.
+\end{bmatrix}
+$$.
+
+其中v是狄拉克速度, k是从层的狄拉克点测得的动量, $θ_k$ 是相对于X轴的动量方向, 自旋体哈密尔顿作用于各个层的A和B子晶格自由度.
+
 我们选择图1中描述的坐标系, 对于该坐标系, 解耦双层哈密顿式为
-$|1>h(θ/2)<1|+|2>h(-θ/2)<2|$, 
-其中$|i><i|$ 投射到层 $i$
+$|1\rangle h(θ/2)\langle 1|+|2\rangle h(-θ/2)\langle 2|$, 
+其中$|i\rangle\langle i|$ 投射到层 $i$.
 
 >We derive a continuum model for the tunneling term by assuming that the interlayer tunneling amplitude between π-orbitals is a smooth function $t(r)$ of spatial separation projected onto the graphene planes.
 The matrix element
@@ -100,11 +120,12 @@ $|\Psi_{\vec{p}β}^{(2)}=\frac{1}{\sqrt{N}}∑_{\vec{R'}}e^{i\vec{p}(R'+\tau_{β
 
 我们假设π轨道之间的层间跃迁振幅是投射到石墨烯平面上的空间分离的平滑函数$t(r)$, 
 从而得到了层间跃迁项的连续模型.
+
 层间跃迁项哈密顿量
 $H_{T}$
 的矩阵元素
 
-$T_{\vec{k}\vec{p'}}^{αβ}=<Ψ_{\vec{k}}^{(1)}|H_{T}|Ψ_{\vec{p'}β}^{(2)}>$
+$T_{\vec{k}\vec{p'}}^{αβ}=\langle Ψ_{\vec{k}}^{(1)}|H_{T}|Ψ_{\vec{p'}β}^{(2)}\rangle $
 
 描述了一个过程, 其中一个具有
 $\vec{p'}=M\vec{p}$
@@ -127,8 +148,8 @@ for the interlayer hopping amplitude in which t depends on the difference betwee
 在这里，$\tau_{A}=0$，$\tau_{B}=\tau$，$\vec{R}$ 在三角布拉维格子上求和。
 将式2和式3代入式1并调用双中心近似中的
 $<\vec{R}+\tau_{α}|H_{T}|\vec{R'}+\tau_{α}-\vec{R'}-\tau'{β}>$
-表示层间跃迁振幅，
-其中$t$取决于两个碳原子的位置差异，
+表示层间跃迁振幅，其中$t$取决于两个碳原子的位置差异.
+
 我们发现
 
 $T{\vec{k}\vec{p'}}^{αβ}=∑_{\vec{G_{1}}\vec{G_{2}}}\frac{t_{\overline{k}+\vec{G}}}{Ω}e^{i[\vec{G_{1}}\tau_{α}-\vec{G_2}(\tau_{β}-\tau)-\vec{G'{2}}\vec{d}]}δ{\overline{k}+\vec{G_{1}},\overline{p'}+\vec{G'_{2}}}$。{#eq5}
@@ -723,7 +744,7 @@ Finally, we remark that electron-electron interactions neglected in this work ar
 
 Bloch带模型有一个简单而有吸引力的物理解释。
 跃迁哈密顿量在空间上是局域的。
-在每个位置，它的$ 4\times4$ 矩阵描述了亚晶格相关的层间跃迁，这取决于两层原子之间的局部配位。
+在每个位置，它的 $ 4\times 4$ 矩阵描述了亚晶格相关的层间跃迁，这取决于两层原子之间的局部配位。
 在图5中，我们绘制了原子位置的moire图案和跃迁哈密顿量的两个最小正本征值，它们在相同的长度尺度上随位置变化。
 在每个位置上，局部层间隧道哈密顿量都是保持空间中所有位置的局部配位不变的系统的哈密顿量。
 例如，在AB点和BA点，隧道哈密顿量是AB和BA系统的哈密顿量，在这些系统中，隧道跃迁不会产生能隙，因此最小正本征值为零。
