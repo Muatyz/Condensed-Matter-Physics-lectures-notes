@@ -96,16 +96,20 @@ We choose the coordinate system depicted in Fig. 1 for which the decoupled bilay
 
 相对于固定坐标系, 旋转一个角度θ的层的狄拉克-哈米顿项（21）为
 
-$v_k=vk\begin{bmatrix} 
+$$
+v_k=vk\begin{bmatrix} 
+
 0 & e^{i(θ_{k}-θ)}\\
 e^{-i(θ_{k}-θ)} & 0\\ 
-\end{bmatrix}$.
+
+\end{bmatrix}
+$$.
 
 其中v是狄拉克速度, k是从层的狄拉克点测得的动量, $θ_k$ 是相对于X轴的动量方向, 自旋体哈密尔顿作用于各个层的A和B子晶格自由度.
 
 我们选择图1中描述的坐标系, 对于该坐标系, 解耦双层哈密顿式为
 $|1\rangle h(θ/2)\langle 1|+|2\rangle h(-θ/2)\langle 2|$, 
-其中$|i\rangle\langle i|$ 投射到层 $i$.
+其中 $|i\rangle\langle i|$ 投射到层 $i$.
 
 >We derive a continuum model for the tunneling term by assuming that the interlayer tunneling amplitude between π-orbitals is a smooth function $t(r)$ of spatial separation projected onto the graphene planes.
 The matrix element
@@ -147,10 +151,10 @@ for the interlayer hopping amplitude in which t depends on the difference betwee
 
 译:
 
-在这里，$\tau_{A}=0$，$\tau_{B}=\tau$，$\vec{R}$ 在三角布拉维格子上求和。
+在这里, $\tau_{A}=0$, $\tau_{B}=\tau$, $\vec{R}$ 在三角布拉维格子上求和.
 将式2和式3代入式1并调用双中心近似中的
 $\langle\vec{R}+\tau_{α}|H_{T}|\vec{R'}+\tau_{α}-\vec{R'}-\tau'_{β}\rangle$
-表示层间跃迁振幅，其中$t$取决于两个碳原子的位置差异.
+表示层间跃迁振幅, 其中$t$取决于两个碳原子的位置差异.
 
 我们发现
 
@@ -307,10 +311,10 @@ e^{-iϕ} & e^{iϕ}\\
 \end{bmatrix},$$
 
 并且
-$ϕ = 2π∕3$。
+$ϕ = 2π∕3$.
 公式6中的三个
 $\vec{q_{j}}$
-是狄拉克模型的动量转移，对应于三种层间跃迁过程。
+是狄拉克模型的动量转移, 对应于三种层间跃迁过程.
 
 >For $\vec{d}=0$ and a vanishing twist angle the continuum tunneling matrix is 
 $3wδ_{αA}δ_{βB}$, 
@@ -323,15 +327,15 @@ As we show below the spectrum is independent of $\vec{d}$ for $\theta\neq 0$. In
 
 对于
 $\vec{d}=0$
-和扭转角度为零的情况，连续隧穿矩阵为
+和扭转角度为零的情况, 连续隧穿矩阵为
 $3wδ_{αA}δ_{βB}$,
-并且这个量与位置无关。
-通过与已知的"AB-堆叠"方式的双层材料的电子结构 (24) 进行比较，
-我们设 $w\approx 110\text{ meV}$ 用于剥落的样品，
-然而实验表明 (25) 在一些外延石墨烯样品中 $w$ 可能更小。
-正如我们下面所展示的，当
-$\theta\neq 0$，
-光谱与 $\vec{d}$ 无关。因此，在接下来的讨论中，我们不妨设 $\vec{d}=0$。
+并且这个量与位置无关.
+通过与已知的"AB-堆叠"方式的双层材料的电子结构 (24) 进行比较, 
+我们设 $w\approx 110\text{ meV}$ 用于剥落的样品, 
+然而实验表明 (25) 在一些外延石墨烯样品中 $w$ 可能更小.
+正如我们下面所展示的, 当
+$\theta\neq 0$, 
+光谱与 $\vec{d}$ 无关.因此, 在接下来的讨论中, 我们不妨设 $\vec{d}=0$.
 
 ---
 ## Results
@@ -348,12 +352,12 @@ $\theta$ (measured in degrees), compared to the $∼10^{4} \theta^{-2}$ matrix d
 
 译:
 
-在连续模型中，跃迁具有局域性(或者说定域性)和周期性，这使得布洛赫定理在任何旋转角下都能应用，无论双层膜是否具有晶体结构。 
-如图一所示,我们使用**平面波级数展开**的方式对摩尔纹带进行数值求解。 
-通过将动量空间截断在大小为 $w/\hbar v$ 的晶格矢量处，可以实现收敛.
+在连续模型中, 跃迁具有局域性(或者说定域性)和周期性, 这使得布洛赫定理在任何旋转角下都能应用, 无论双层膜是否具有晶体结构. 
+如图一所示,我们使用**平面波级数展开**的方式对摩尔纹带进行数值求解. 
+通过将动量空间截断在大小为 $w/\hbar v$ 的晶格矢量处, 可以实现收敛.
 对于小的 $\theta$ (单位为度),
-该矩阵(数值求解对角化,从而得到摩尔纹带的能带结构)的维数大约为 $∼10 \theta^{-2}$，相比于微观紧束缚模型下的 
-$∼10^{4} \theta^{-2}$ 的矩阵维数更小 (14, 16)。
+该矩阵(数值求解对角化,从而得到摩尔纹带的能带结构)的维数大约为 $∼10 \theta^{-2}$, 相比于微观紧束缚模型下的 
+$∼10^{4} \theta^{-2}$ 的矩阵维数更小 (14, 16).
 
 >Up to a scale factor the moiré bands depend on a single parameter 
 $\alpha=w/vk_{\theta}$. 
@@ -368,33 +372,33 @@ This narrowing has previously been expected to develop monotonically with decrea
 译:
 
 只要不超过某个比例因子,摩尔纹带都将仅取决于唯一参数
-$\alpha=w/vk_{\theta}$。 
+$\alpha=w/vk_{\theta}$. 
 我们将摩尔纹带视为其布里渊区动量$k$的函数,
 并且对这个函数在许多不同扭曲角下的情况进行了评估.
 图3总结了
-$w=110 meV$，且
-$θ=5°$,1.05°$和0.5°$的结果。 
-如果旋转角很大，低能带几乎与单层石墨烯相同，只是速度需要略微重整化。 
-大的层间耦合效应只会出现在高能范霍夫奇点附近(这一观点由Andrei及其合作者讨论得出(26))。 
-随着扭转角的减少，在一个给定的能量窗口中，带的数量增加，在狄拉克点的带变窄。
-这种变窄以前被认为是随着$θ$的减少而单调地发展。
+$w=110 meV$, 且
+$θ=5°$,1.05°$和0.5°$的结果. 
+如果旋转角很大, 低能带几乎与单层石墨烯相同, 只是速度需要略微重整化. 
+大的层间耦合效应只会出现在高能范霍夫奇点附近(这一观点由Andrei及其合作者讨论得出(26)). 
+随着扭转角的减少, 在一个给定的能量窗口中, 带的数量增加, 在狄拉克点的带变窄.
+这种变窄以前被认为是随着$θ$的减少而单调地发展.
 
 >**范霍夫奇点**
 >
->晶格的布里渊区边界处的特殊点，此时电子的态密度会发生突变。这种突变可以是因为在此处出现了能带的极值点，也可以是因为能带的疏密程度在此处发生了变化。
+>晶格的布里渊区边界处的特殊点, 此时电子的态密度会发生突变.这种突变可以是因为在此处出现了能带的极值点, 也可以是因为能带的疏密程度在此处发生了变化.
 
 >As illustrated in Fig. 3, we instead find that the Dirac-point velocity vanishes already at $θ ≈ 1.05°$, and that the vanishing velocity is accompanied by a very flat moiré band which contributes a sharp peak to the Dirac-point density-of-states (DOS).
 At smaller twists the Dirac-point velocity has a nonmonotonic dependence on $\theta$, vanishing repeatedly at the series of magic angles illustrated in Fig. 4.
 
 译:
 
-如图3所示，我们发现狄拉克点速度在
+如图3所示, 我们发现狄拉克点速度在
 $θ≈1.05°$
-时就已经消失了，而且速度的消失伴随着一个非常平坦的摩尔带，为狄拉克点态密度贡献了一个尖锐的峰值。 
-在更小的旋转角下，狄拉克点速度对
+时就已经消失了, 而且速度的消失伴随着一个非常平坦的摩尔带, 为狄拉克点态密度贡献了一个尖锐的峰值. 
+在更小的旋转角下, 狄拉克点速度对
 $\theta$
-有一个非单调的依赖(实际上就是反复波动,只能看出有多个零点)，
-在图4所示的一系列魔角处反复为0(也就是所谓的"消失")。
+有一个非单调的依赖(实际上就是反复波动,只能看出有多个零点), 
+在图4所示的一系列魔角处反复为0(也就是所谓的"消失").
 
 >Partial insight into the origin of these behaviors can be achieved by examining the simplest limit in which the momentum-space lattice is truncated at the first honeycomb shell. 
 Including the sublattice degree of freedom, this truncation gives rise to the Hamiltonian
@@ -419,33 +423,35 @@ We have numerically verified that this approximation reproduces the velocity wit
 如果采用最简单的截断方法(即选取动量空间晶格中的第一个蜂巢壳处)来取极限, 
 我们可以对这些特性的起源有部分了解. 
 
-将子晶格的自由度也考虑在内，这种截断就产生了哈密顿量的表达式:
+将子晶格的自由度也考虑在内, 这种截断就产生了哈密顿量的表达式:
 
-$\mathcal{H}_{\vec{k}}=\begin{bmatrix} 
+$$
+\mathcal{H}_{\vec{k}}=\begin{bmatrix} 
 h_{\vec{k}}(\theta/2) & T_{b} & T_{tr} & T_{tl}\\
 T_{b}^{\dagger} & h_{\vec{k}_{b}}(-\theta/2) & 0 & 0\\
 T_{tr}^{\dagger} & 0 & h_{\vec{k}_{tr}}(-\theta/2) & 0\\
 T_{tl}^{\dagger} & 0 & 0 & h_{\vec{k}_{tl}}(-\theta/2)\\ 
-\end{bmatrix}$,
+\end{bmatrix}
+$$,
 
 其中
 $\vec{k}$
-处于摩尔布里渊区，
-$\vec{k}_{j}=\vec{k}+\vec{q}_{j}$。 
+处于摩尔布里渊区, 
+$\vec{k}_{j}=\vec{k}+\vec{q}_{j}$. 
 
 这个哈密顿量作用于四个双分量自旋子
-$\Psi=(\psi_{0},\psi_{1},\psi_{2},\psi_{3})$。 
-第一个（$\psi_{0}$）是在一个某层石墨烯狄拉克点附近的动量，其他三个
+$\Psi=(\psi_{0},\psi_{1},\psi_{2},\psi_{3})$. 
+第一个（$\psi_{0}$）是在一个某层石墨烯狄拉克点附近的动量, 其他三个
 $\psi_{j}$
 则是在
 $\vec{q}_{j}$
 附近的动量,
-位置则是在另一层石墨烯中。 
+位置则是在另一层石墨烯中. 
 
 $h(\theta)$
-对角度的依赖性在参数上很小,所以可以忽略不计。 
+对角度的依赖性在参数上很小,所以可以忽略不计. 
 
-我们已经用数值验证了,这种近似方法直到第一个魔转角都能以合理的精度重现了速度.（图4）。
+我们已经用数值验证了,这种近似方法直到第一个魔转角都能以合理的精度重现了速度.（图4）.
 
 >The renormalized velocity $v^{\star}=\partial_{\vec{k}}\epsilon_{\vec{k}}^{\star}|_{\vec{k}=0}$ follows from the spectrum 
 $\epsilon_{\vec{k}}^{\star}$ 
@@ -466,7 +472,7 @@ The zero energy eigenstates must satisfy
 我们可以从转角双层石墨烯的能谱
 $\epsilon_{\vec{k}}^{\star}$
 得到重整化后的速度
-$v^{\star}=\partial_{\vec{k}}\epsilon_{\vec{k}}^{\star}|_{\vec{k}=0}$。
+$v^{\star}=\partial_{\vec{k}}\epsilon_{\vec{k}}^{\star}|_{\vec{k}=0}$.
 
 该哈密顿量被表示为
 $\vec{k}=0$
@@ -474,20 +480,20 @@ $\vec{k}=0$
 $\mathcal{H}^{(0)}$
 以及依赖于$k$的项
 $\mathcal{H}{\vec{k}}^{(1)}$
-的和，并在
+的和, 并在
 $\vec{k}$
-的级数展开上求解。
+的级数展开上求解.
 
 我们考虑哈密顿量中的
 $\vec{k}=0$
 项.
 我们假设
 $\mathcal{H}^{(0)}$
-有零能量的本征态(我们将找到这些态以证明这个假设)。
+有零能量的本征态(我们将找到这些态以证明这个假设).
 
 零能量本征态必须满足:
 
-$\psi_{j}=-h_{j}^{-1}T_{j}^{\dagger}\psi_{0}$。[9]
+$\psi_{j}=-h_{j}^{-1}T_{j}^{\dagger}\psi_{0}$.[9]
 
 >Because
 >
@@ -515,24 +521,20 @@ The effective Hamiltonian matrix to leading order in $k$ is therefore
 
 由于
 
-$T_{j}h_{j}^{-1}T_{j}^{\dagger}=0$，
+$T_{j}h_{j}^{-1}T_{j}^{\dagger}=0$, 
 
-因此 $\psi_{0}$ 的自旋轨道满足 $h_{0}\psi_{0}=0$，
-即 $\psi_{0}$ 是孤立层的两个零能态 $\psi_{0}^{(1)}$ 和 $\psi_{0}^{(2)}$ 之一。
+因此 $\psi_{0}$ 的自旋轨道满足 $h_{0}\psi_{0}=0$, 
+即 $\psi_{0}$ 是孤立层的两个零能态 $\psi_{0}^{(1)}$ 和 $\psi_{0}^{(2)}$ 之一.
 
-然后，根据式子[9]，可以得到 $\mathcal{H}^{(0)}$ 的两个零能量本征态。
+然后, 根据式子[9], 可以得到 $\mathcal{H}^{(0)}$ 的两个零能量本征态.
 
-考虑到 $|\psi_0^{(j)}|=1$，波函数应当通过 $|\Psi|^{2}=1+6\alpha^2$
-进行归一化。
+考虑到 $|\psi_0^{(j)}|=1$, 波函数应当通过 $|\Psi|^{2}=1+6\alpha^2$
+进行归一化.
 
-因此，在$k$的一阶导数方面的有效哈密顿矩阵为：
+因此, 在$k$的一阶导数方面的有效哈密顿矩阵为：
 
-$$
-\langle\Psi^{(i)}|\mathcal{H}_{\vec{k}}^{(1)}|\Psi^{(j)}\rangle=
-
-\frac{-v}{1+6\alpha^2}\psi_{0}^{(j)\dagger}[\sigma\cdot\vec{k}+w^2\sum_{j}T_{j}h_{j}^{-1\dagger}\sigma\cdot\vec{k}h_{j}^{-1}T_{j}^{\dagger}]\psi_{0}^{(j)}
-=-v^{\star}\psi_{0}^{(j)\dagger}\sigma\cdot\vec{k}\psi_{0}^{(j)}
-$$.
+$\langle\Psi^{(i)}|\mathcal{H}_{\vec{k}}^{(1)}|\Psi^{(j)}\rangle=
+\frac{-v}{1+6\alpha^2}\psi_{0}^{(j)\dagger}[\sigma\cdot\vec{k}+w^2\sum_{j}T_{j}h_{j}^{-1\dagger}\sigma\cdot\vec{k}h_{j}^{-1}T_{j}^{\dagger}]\psi_{0}^{(j)}=-v^{\star}\psi_{0}^{(j)\dagger}\sigma\cdot\vec{k}\psi_{0}^{(j)}$.
 
 >Aside from a renormalized velocity
 >
@@ -548,13 +550,13 @@ The eigenstates at the Dirac point are a coherent combination of components in t
 
 除了一个经过重整化的速度
 
-$\frac{v^{\star}}{v}=\frac{1-3\alpha^2}{1+6\alpha^2}$，
+$\frac{v^{\star}}{v}=\frac{1-3\alpha^2}{1+6\alpha^2}$, 
 
-哈密顿量与单层石墨烯的连续模型哈密顿量相同。
-在方程式11中，分母体现的是 $\Psi_j$ 对波函数归一化的贡献，而分子体现的是到它们对速度矩阵元的贡献。
-对于小的 $\alpha$，方程式11简化为 $v^\star/v=1-9\alpha^2$(该式由Lopes dos Santos等人首次得到)。
-在第一个魔转角处速度降为0，因为它正在变号。
-在Dirac点处的本征态是两个石墨烯层中速度具有相反符号的组分的相干组合。
+哈密顿量与单层石墨烯的连续模型哈密顿量相同.
+在方程式11中, 分母体现的是 $\Psi_j$ 对波函数归一化的贡献, 而分子体现的是到它们对速度矩阵元的贡献.
+对于小的 $\alpha$, 方程式11简化为 $v^\star/v=1-9\alpha^2$(该式由Lopes dos Santos等人首次得到).
+在第一个魔转角处速度降为0, 因为它正在变号.
+在Dirac点处的本征态是两个石墨烯层中速度具有相反符号的组分的相干组合.
 
 ~~人话:~~
 
@@ -565,7 +567,7 @@ $\frac{v^{\star}}{v}=\frac{1-3\alpha^2}{1+6\alpha^2}$，
 
 >**Counterflow Conductivity**
 >
->当两个电子系统在相反方向移动时，它们之间的电导率。在材料物理学中，常常通过测量两个相反方向移动的电子系统之间的电导率来研究电子的输运性质。当两个电子系统的速度相等但方向相反时，它们之间的电导率通常会非常小，这种现象被称为“counterflow conductivity suppression”。这种效应在石墨烯等二维材料中经常被观察到，并且对于研究这些材料的电子输运性质非常重要。
+>当两个电子系统在相反方向移动时, 它们之间的电导率.在材料物理学中, 常常通过测量两个相反方向移动的电子系统之间的电导率来研究电子的输运性质.当两个电子系统的速度相等但方向相反时, 它们之间的电导率通常会非常小, 这种现象被称为“counterflow conductivity suppression”.这种效应在石墨烯等二维材料中经常被观察到, 并且对于研究这些材料的电子输运性质非常重要.
 
 >The distribution of the quasiparticle velocity between the two layers implies exotic transport characteristics for separately contacted layers. 
 Consider a counterflow geometry in which currents in the two layers flow antiparallel to one another. 
@@ -590,19 +592,19 @@ v_{CF}^{x}=-v\begin{bmatrix}
 
 译:
 
-在两层之间准粒子速度的分布意味着分别接触的层具有奇特的输运特性。
-考虑一种反流几何形状，其中两层中的电流彼此反向流动。
-我们关注扭转角 $θ ≳ 2°$，其中八带模型有效且处于半经典状态，此时 $\epsilon_{F}\tau >1$，并找到了反流电导 $\sigma_{CF}$。
+在两层之间准粒子速度的分布意味着分别接触的层具有奇特的输运特性.
+考虑一种反流几何形状, 其中两层中的电流彼此反向流动.
+我们关注扭转角 $θ ≳ 2°$, 其中八带模型有效且处于半经典状态, 此时 $\epsilon_{F}\tau >1$, 并找到了反流电导 $\sigma_{CF}$.
 
 >**八带模型**
 >
->“八带模型”是一种用于描述扭曲双层石墨烯的理论模型。在这个模型中，每个石墨烯层的两个Dirac点之间的相互作用被考虑在内，因此会出现四个价带和四个导带，共计八个带。相比于单层石墨烯的两个带（一个价带和一个导带），八带模型提供了更为准确的描述扭转双层石墨烯的方式。在八带模型中，每个带的色散关系（即能量与动量的关系）由一组非常复杂的解析式给出。八带模型的具体公式实际上就是本文所给出的 $\sigma_{CF}$ 的表达式.
+>“八带模型”是一种用于描述扭曲双层石墨烯的理论模型.在这个模型中, 每个石墨烯层的两个Dirac点之间的相互作用被考虑在内, 因此会出现四个价带和四个导带, 共计八个带.相比于单层石墨烯的两个带（一个价带和一个导带）, 八带模型提供了更为准确的描述扭转双层石墨烯的方式.在八带模型中, 每个带的色散关系（即能量与动量的关系）由一组非常复杂的解析式给出.八带模型的具体公式实际上就是本文所给出的 $\sigma_{CF}$ 的表达式.
 
-我们假设费米动量远小于 $k_{\theta}$，并且 $1/\tau_{0}<\hbar vk_{\theta}$，其中 $\tau_{0}$ 是单粒子寿命。使用Kubo公式，我们得到：
+我们假设费米动量远小于 $k_{\theta}$, 并且 $1/\tau_{0}<\hbar vk_{\theta}$, 其中 $\tau_{0}$ 是单粒子寿命.使用Kubo公式, 我们得到：
 
 $\sigma_{CF}=\frac{4e^{2}}{\pi}\sum_{\vec{k}\mu}|\langle\psi_{k}|v_{VF}^{x}|\psi_{k}\rangle|^2[Im\{G_{k\mu}^{r}(\epsilon_{F})\}]$
 
-其中，
+其中, 
 
 $$
 v_{CF}^{x}=-v\begin{bmatrix} 
@@ -613,11 +615,11 @@ v_{CF}^{x}=-v\begin{bmatrix}
 \end{bmatrix},
 $$
 
-是反流速度算符的x分量(我们将电场设置在x轴上)，
+是反流速度算符的x分量(我们将电场设置在x轴上), 
 $G_{k\mu}^{r}(\omega)=(\omega-\epsilon_{k\mu}^{\star}+i/2\tau_{0})^{-1}$ 是带有 
-$\mu$ 标签的逆变换格林函数，表示两个Dirac带的能量色散，
+$\mu$ 标签的逆变换格林函数, 表示两个Dirac带的能量色散, 
 $\epsilon_{k\mu}^{\star}=\mu v^{\star}k$
-是小动量条件下转角双层石墨烯的能量色散。
+是小动量条件下转角双层石墨烯的能量色散.
 
 >For an electron-doped system the valence band can be neglected and
 >
@@ -639,23 +641,23 @@ The increase in the DOS is then exactly compensated by the reduction of the reno
 
 译:
 
-对于一个电子掺杂的系统，可以忽略价带，并且
+对于一个电子掺杂的系统, 可以忽略价带, 并且
 
 $\sigma_{CF}\approx e^2g\tau\nu^{\star}(\epsilon_{F})\int\frac{d\theta_{k}}{2\pi}|\langle\psi_{k\mu}|\nu_{CF}^{x}|\psi_{k\mu}\rangle|^2$
 
-其中，$v^{\star}$ 是双层扭转石墨烯的态密度。顶点函数
+其中, $v^{\star}$ 是双层扭转石墨烯的态密度.顶点函数
 
 $\langle\psi_{k}|v_{CF}^{x}|\psi_{k}\rangle=v_{CF}\cos{\theta_{k}}$,
 
-其中，$v_{CF}=v(1+3\alpha^2)/(1+6\alpha^2)$ 直接从前面的章节得到，如果我们注意到反流速度算符和正常速度算符之间的符号差异。反流电导率为
+其中, $v_{CF}=v(1+3\alpha^2)/(1+6\alpha^2)$ 直接从前面的章节得到, 如果我们注意到反流速度算符和正常速度算符之间的符号差异.反流电导率为
 
 $\sigma_{CF}=\sigma_{0}(\frac{v_{CF}}{v^{\star}})^2$
 
-其中，$\sigma_{0}~e^2\epsilon_{F}\tau/\pi$ 是单层石墨烯的电导率.
-当 $\theta$ 从一个大的值减小到1°时，$v^{\star}$ 减小，态密度相应增加。
-反流电导因载流子密度的增加而增加，而不伴随相对流速的减小。
-对于常规测量，其中双层石墨烯中的电流是单向的，式子16中的 $v_{CF}$ 被 $v^{\star}$ 取代。
-态密度的增加被粒子速度的减小所精确补偿，单层的电导率得以恢复。
+其中, $\sigma_{0}~e^2\epsilon_{F}\tau/\pi$ 是单层石墨烯的电导率.
+当 $\theta$ 从一个大的值减小到1°时, $v^{\star}$ 减小, 态密度相应增加.
+反流电导因载流子密度的增加而增加, 而不伴随相对流速的减小.
+对于常规测量, 其中双层石墨烯中的电流是单向的, 式子16中的 $v_{CF}$ 被 $v^{\star}$ 取代.
+态密度的增加被粒子速度的减小所精确补偿, 单层的电导率得以恢复.
 
 ### Dependence of the Spectrum on $\vec{d}$
 
@@ -680,33 +682,36 @@ We expect that dependence on $\vec{d}$ will be observable only at short period (
 
 译:
 
-我们现在证明错位双层体系的能谱与其中一层的线性平移无关，通过一个幺正变换使得哈密顿量不依赖于 $\vec{d}$。
+我们现在证明错位双层体系的能谱与其中一层的线性平移无关, 通过一个幺正变换使得哈密顿量不依赖于 $\vec{d}$.
 
-考虑动量 $\vec{Q}$ 在第一个摩尔布里渊区的哈密顿量 $H_{\vec{Q}}$ 。
+考虑动量 $\vec{Q}$ 在第一个摩尔布里渊区的哈密顿量 $H_{\vec{Q}}$ .
 对于每个 $k$ 空间三角布拉维格子上的动量为（见图1）
 
 $\vec{k}=\vec{Q}+n\vec{q_1}+m\vec{q_2}$,
 
 其中
-$\vec{q_1}=k_{\theta}(\frac{1}{2},\frac{\sqrt{3}}{2})$，$\vec{q_2}=k_{\theta}(-\frac{1}{2},\frac{\sqrt{3}}{2})$,我们关联相位
+$\vec{q_1}=k_{\theta}(\frac{1}{2},\frac{\sqrt{3}}{2})$, 
+$\vec{q_2}=k_{\theta}(-\frac{1}{2},\frac{\sqrt{3}}{2})$,
 
-$\Phi^{k}=n\vec{G'}_{2}\cdot\vec{d}+m\vec{G'}_{3}\cdot\vec{d}$。
+我们关联相位
 
-在另一个亚晶格上，关联于动量 $\vec{k}-\vec{k}{\theta}\hat{y}$ 的相位同样是
-$\Phi{\vec{k}}$ 。
-在新的基态 $e^{i\Phi_{\vec{k}}}|\vec{k}\alpha\rangle$ 下，
-哈密顿量 $H_{\vec{Q}}$ 并非 $\vec{d}$ 的函数。
+$\Phi^{k}=n\vec{G'}_{2} \cdot \vec{d}+m\vec{G'}_{3} \cdot \vec{d}$.
 
-物理上，不依赖于 $\vec{d}$ 可以理解为改变 $\vec{d}$ 只是在空间中平移moire图案。
-只有在 $\theta=0$ 和其他共格角度时，双层能谱才会取决于 $\vec{d}$。
+在另一个亚晶格上, 关联于动量 $\vec{k}-\vec{k}{\theta}\hat{y}$ 的相位同样是
+$\Phi{\vec{k}}$ .
+在新的基态 $e^{i\Phi_{\vec{k}}}|\vec{k}\alpha\rangle$ 下, 
+哈密顿量 $H_{\vec{Q}}$ 并非 $\vec{d}$ 的函数.
 
-我们预计只有在短周期（即大 $\theta$）的共格角度时，才能观察到 $\vec{d}$ 的依赖性。
+物理上, 不依赖于 $\vec{d}$ 可以理解为改变 $\vec{d}$ 只是在空间中平移moire图案.
+只有在 $\theta=0$ 和其他共格角度时, 双层能谱才会取决于 $\vec{d}$.
+
+我们预计只有在短周期（即大 $\theta$）的共格角度时, 才能观察到 $\vec{d}$ 的依赖性.
 
 >**共格角度Commensurate Angles**
 >
->在物理学中，两个周期性结构的共格是指它们之间存在匹配的空间排列方式。如果两个晶格的晶格常数和晶向满足特定的关系，则它们的共格就被称为共格结构，这个特定的关系被称为“共格条件”。如果两个周期性结构的共格条件不被满足，它们之间的匹配就被称为“不共格”（incommensurate）。
+>在物理学中, 两个周期性结构的共格是指它们之间存在匹配的空间排列方式.如果两个晶格的晶格常数和晶向满足特定的关系, 则它们的共格就被称为共格结构, 这个特定的关系被称为“共格条件”.如果两个周期性结构的共格条件不被满足, 它们之间的匹配就被称为“不共格”（incommensurate）.
 >
->对于双层石墨烯，当两层图案之间的角度非常接近特定角度时，双层石墨烯就会表现出一些特殊的物理性质，比如出现了长周期的moire图案和扭曲的带结构。这些特殊的角度被称为共格角度（commensurate angles），因为在这些角度下，两层之间的moire图案可以完美地对齐，形成一种共格结构。
+>对于双层石墨烯, 当两层图案之间的角度非常接近特定角度时, 双层石墨烯就会表现出一些特殊的物理性质, 比如出现了长周期的moire图案和扭曲的带结构.这些特殊的角度被称为共格角度（commensurate angles）, 因为在这些角度下, 两层之间的moire图案可以完美地对齐, 形成一种共格结构.
 
 ---
 
@@ -726,19 +731,19 @@ We therefore expect the continuum model to be very accurate up to energies of ap
 
 译:
 
-在大多数 $\theta$ 值下,扭转双层石墨烯都是一种无定晶胞的准周期结构。
-然而，我们发现对于 $\theta ≲ 10°$ ，用布洛赫能带描述系统的电子结构很有意义。
-隐藏的周期性结构被证明与重叠层的moire图案有关(27)。
+在大多数 $\theta$ 值下,扭转双层石墨烯都是一种无定晶胞的准周期结构.
+然而, 我们发现对于 $\theta ≲ 10°$ , 用布洛赫能带描述系统的电子结构很有意义.
+隐藏的周期性结构被证明与重叠层的moire图案有关(27).
 
 对周期性moire带哈密顿量的主要修正是这样的:跃迁振幅对应的动量,要同时满足三个条件,即(1)晶体动量守恒条件(方程[5](#eq5));(2)大于 $k_{D}$;(3)满足(1),(2)的同时要尽可能最小.
 
-正如我们在参考文献19中所示，转角双层石墨烯结构的实空间共格现象 与 扩展区方案中Dirac点动量空间共格现象是一致的（参见参考文献19中的图2和图3）。
-因此，如果将 $\sqrt{3}a$ 的晶格矢量（其中a是单层石墨烯中的碳-碳距离）替换为倒易晶格矢量$G$，就可以使用moire周期公式找到共格矢量 $\vec{g}$。
+正如我们在参考文献19中所示, 转角双层石墨烯结构的实空间共格现象 与 扩展区方案中Dirac点动量空间共格现象是一致的（参见参考文献19中的图2和图3）.
+因此, 如果将 $\sqrt{3}a$ 的晶格矢量（其中a是单层石墨烯中的碳-碳距离）替换为倒易晶格矢量$G$, 就可以使用moire周期公式找到共格矢量 $\vec{g}$.
 
-于是就有 $g(\theta)\approx G/\theta$。例如，$g(10°)=24/a$和$g(2°)$。
+于是就有 $g(\theta)\approx G/\theta$.例如, $g(10°)=24/a$和$g(2°)$.
 
-正如图2所示，对于这些大波矢，跃迁振幅与 $t_{k_{D}}$ 的值相比确实微不足道。
-所以我们预计,连续模型在能量达到约 $1eV$ 且 角度达到约 $10°$ 时非常精确。
+正如图2所示, 对于这些大波矢, 跃迁振幅与 $t_{k_{D}}$ 的值相比确实微不足道.
+所以我们预计,连续模型在能量达到约 $1eV$ 且 角度达到约 $10°$ 时非常精确.
 
 >The Bloch band model has a simple and appealing physical interpretation. 
 The hopping Hamiltonian is local in space. 
@@ -759,24 +764,24 @@ Finally, we remark that electron-electron interactions neglected in this work ar
 
 译:
 
-Bloch带模型有一个简单而有吸引力的物理解释。
-跃迁哈密顿量在空间上是局域的。
+Bloch带模型有一个简单而有吸引力的物理解释.
+跃迁哈密顿量在空间上是局域的.
 
-在每个位置，它的 $ 4\times 4$ 矩阵描述了亚晶格相关的层间跃迁，这取决于两层原子之间的局部配位。
+在每个位置, 它的 $ 4\times 4$ 矩阵描述了亚晶格相关的层间跃迁, 这取决于两层原子之间的局部配位.
 
-在图5中，我们绘制了原子位置的moire图案和跃迁哈密顿量的两个最小正本征值，它们在相同的长度尺度上随位置变化。
+在图5中, 我们绘制了原子位置的moire图案和跃迁哈密顿量的两个最小正本征值, 它们在相同的长度尺度上随位置变化.
 
-在每个位置上，局部层间隧道哈密顿量都是保持空间中所有位置的局部配位不变的系统的哈密顿量。
+在每个位置上, 局部层间隧道哈密顿量都是保持空间中所有位置的局部配位不变的系统的哈密顿量.
 
-例如，在AB点和BA点，隧道哈密顿量是AB和BA系统的哈密顿量，在这些系统中，隧道跃迁不会产生能隙，因此最小正本征值为零。
-另一方面，能隙在moire图案的AA点处达到最大值（$6w$）。
+例如, 在AB点和BA点, 隧道哈密顿量是AB和BA系统的哈密顿量, 在这些系统中, 隧道跃迁不会产生能隙, 因此最小正本征值为零.
+另一方面, 能隙在moire图案的AA点处达到最大值（$6w$）.
 
-总之，我们已经制定了一个连续模型来描述旋转石墨烯双层体系的电子结构。
-得到的moire带结构可以在任意扭角下进行评估，而不仅仅是在共格值处。
+总之, 我们已经制定了一个连续模型来描述旋转石墨烯双层体系的电子结构.
+得到的moire带结构可以在任意扭角下进行评估, 而不仅仅是在共格值处.
 
-我们发现，在Dirac点处的速度随旋转角增大而振荡，在一系列魔角处消失，这产生了大的态密度和大的反流电导率。
-moire带的许多性质仍然不为人们所理解。
-例如，虽然我们能够解释最大的魔角，但在较小的 $\theta$ 值处的魔角模式到目前为止只能通过数值方法揭示。
-此外，在 $\theta\approx 1.05°$ 处的整个最低moire带的平坦化仍然是一个谜。
-当我们的理论扩展到包含三个或更多层的石墨烯堆叠时，会出现一些有趣的新问题。
-最后，我们指出，本文忽略的电子间相互作用在中性系统的魔角处肯定是重要的，并且可能会产生反流超流动性、平带磁性或其他类型的有序状态(28,29,30)。
+我们发现, 在Dirac点处的速度随旋转角增大而振荡, 在一系列魔角处消失, 这产生了大的态密度和大的反流电导率.
+moire带的许多性质仍然不为人们所理解.
+例如, 虽然我们能够解释最大的魔角, 但在较小的 $\theta$ 值处的魔角模式到目前为止只能通过数值方法揭示.
+此外, 在 $\theta\approx 1.05°$ 处的整个最低moire带的平坦化仍然是一个谜.
+当我们的理论扩展到包含三个或更多层的石墨烯堆叠时, 会出现一些有趣的新问题.
+最后, 我们指出, 本文忽略的电子间相互作用在中性系统的魔角处肯定是重要的, 并且可能会产生反流超流动性、平带磁性或其他类型的有序状态(28,29,30).
