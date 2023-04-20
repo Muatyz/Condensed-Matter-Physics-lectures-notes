@@ -79,9 +79,11 @@ As the twist angles become smaller, interlayer coupling strengthens, and the qua
 
 >We construct a low-energy continuum model Hamiltonian that consists of three terms: two single-layer Dirac–Hamiltonian terms that account for the isolated graphene sheets and a **tunneling term** that describes hopping between layers. The Dirac–Hamiltonian (21) for a layer rotated by an angle θ with respect to a fixed coordinate system is
 >
->$$v_k=vk\begin{bmatrix}
-0 & e^{i(θ_{k}-θ)}\\
-e^{i(θ_{k}-θ)} & 0\\
+>$$
+v_k=
+vk\begin{bmatrix}
+0 & e^{i(θ_{k}-θ)} \\
+e^{-i(θ_{k}-θ)} & 0 \\
 \end{bmatrix}
 >$$
 >
@@ -94,12 +96,10 @@ We choose the coordinate system depicted in Fig. 1 for which the decoupled bilay
 
 相对于固定坐标系, 旋转一个角度θ的层的狄拉克-哈米顿项（21）为
 
-$$
-v_k=vk\begin{bmatrix} 
+$v_k=vk\begin{bmatrix} 
 0 & e^{i(θ_{k}-θ)}\\
 e^{-i(θ_{k}-θ)} & 0\\ 
-\end{bmatrix}
-$$.
+\end{bmatrix}$.
 
 其中v是狄拉克速度, k是从层的狄拉克点测得的动量, $θ_k$ 是相对于X轴的动量方向, 自旋体哈密尔顿作用于各个层的A和B子晶格自由度.
 
@@ -399,14 +399,12 @@ $\theta$
 >Partial insight into the origin of these behaviors can be achieved by examining the simplest limit in which the momentum-space lattice is truncated at the first honeycomb shell. 
 Including the sublattice degree of freedom, this truncation gives rise to the Hamiltonian
 >
->$$
-\mathcal{H}_{\vec{k}}=\begin{bmatrix} 
+>$\mathcal{H}_{\vec{k}}=\begin{bmatrix} 
 h_{\vec{k}}(\theta/2) & T_{b} & T_{tr} & T_{tl}\\
 T_{b}^{\dagger} & h_{\vec{k}_{b}}(-\theta/2) & 0 & 0\\
 T_{tr}^{\dagger} & 0 & h_{\vec{k}_{tr}}(-\theta/2) & 0\\
 T_{tl}^{\dagger} & 0 & 0 & h_{\vec{k}_{tl}}(-\theta/2)\\ 
-\end{bmatrix}
->$$,
+\end{bmatrix}$,
 >
 >where $\vec{k}$ is in the moiré Brillouin-zone and 
 $\vec{k}_{j}=\vec{k}+\vec{q}_{j}$. 
@@ -423,14 +421,12 @@ We have numerically verified that this approximation reproduces the velocity wit
 
 将子晶格的自由度也考虑在内，这种截断就产生了哈密顿量的表达式:
 
-$$
-\mathcal{H}_{\vec{k}}=\begin{bmatrix} 
+$\mathcal{H}_{\vec{k}}=\begin{bmatrix} 
 h_{\vec{k}}(\theta/2) & T_{b} & T_{tr} & T_{tl}\\
 T_{b}^{\dagger} & h_{\vec{k}_{b}}(-\theta/2) & 0 & 0\\
 T_{tr}^{\dagger} & 0 & h_{\vec{k}_{tr}}(-\theta/2) & 0\\
 T_{tl}^{\dagger} & 0 & 0 & h_{\vec{k}_{tl}}(-\theta/2)\\ 
-\end{bmatrix}
-$$,
+\end{bmatrix}$,
 
 其中
 $\vec{k}$
