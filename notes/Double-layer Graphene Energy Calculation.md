@@ -12,8 +12,8 @@
 
 $$
 
-\vec{a}_{1} = \frac{a}{2} \left( 3,  \sqrt{3} \right),
-\vec{a}_{2} = \frac{a}{2} \left( 3, -\sqrt{3} \right)
+\vec{a}_{1} = \frac{a}{2} ( 3,  \sqrt{3} ),
+\vec{a}_{2} = \frac{a}{2} ( 3, -\sqrt{3} )
 
 $$
 
@@ -23,8 +23,8 @@ $$
 
 $$
 
-\vec{b}_{1} = \frac{2 \pi}{3 a} \left( 1, \sqrt{3} \right), 
-\vec{b}_{2} = \frac{2 \pi}{3 a} \left( 1, -\sqrt{3} \right)
+\vec{b}_{1} = \frac{2 \pi}{3 a} ( 1, \sqrt{3} ), 
+\vec{b}_{2} = \frac{2 \pi}{3 a} ( 1, -\sqrt{3}).
 
 $$
 
@@ -32,9 +32,9 @@ $$
 
 $$
 
-\delta_{1}  = \frac{a}{2} \left( 1, \sqrt{3} \right), 
-\delta_{2}  = \frac{a}{2} \left( 1, -\sqrt{3} \right), 
-\delta_{3}  = a \left( -1, 0 \right)
+\delta_{1}  = \frac{a}{2} ( 1, \sqrt{3} ), 
+\delta_{2}  = \frac{a}{2} ( 1, -\sqrt{3} ), 
+\delta_{3}  = a ( -1, 0 )
 
 $$
 
@@ -68,17 +68,20 @@ $$
 使用傅里叶变换将升降算符写成动量空间的形式:
 
 $$
-a_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot\vec{r}_{i,A}}a_{\vec{k}}, \quad
-b_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot\vec{r}_{i,B}}b_{\vec{k}}
+a_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot\vec{r}_{i,A}}a_{\vec{k}},
 $$
 
-将上式代入到哈密顿量的式子中,即有
+$$
+b_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot\vec{r}_{i,B}}b_{\vec{k}}.
+$$
+
+将上式代入到哈密顿量的式子中, 即有
 
 $$
 \hat{H} = \sum_{\vec{k}}h(\vec{k})=t\sum_{\vec{k}}f(\vec{k})a_{\vec{k}}^{\dagger}b_{\vec{k}} + h.c..
 $$
 
-其中 $f(\vec{k}) = e^{i\vec{k}\cdot\delta_{1}} + e^{i\vec{k}\cdot\delta_{2}} + e^{i\vec{k}\cdot\delta_{3}} = \sum_{i = 1}^{3}e^{i\vec{k}\cdot\delta_{i}}$.
+>$f(\vec{k}) = e^{i\vec{k}\cdot\delta_{1}} + e^{i\vec{k}\cdot\delta_{2}} + e^{i\vec{k}\cdot\delta_{3}} = \sum_{i = 1}^{3}e^{i\vec{k}\cdot\delta_{i}}$.
 
 对这个哈密顿量求本征值, 即有本征能量为
 
@@ -91,10 +94,12 @@ $$
 
 ## Commensuration (共格, 相称)
 
-要产生共格现象, 就需要摩尔超晶格的原胞基矢能够由整数个原晶格基矢组成. 用公式描述即有
+要产生共格现象, 就需要摩尔超晶格的原胞基矢能够由整数个原晶格基矢组成. 
+
+用公式描述即有
 
 $$
-\vec{A}_{1} = n\vec{a}_1 + m\vec{a}_2, \quad
+\vec{A}_{1} = n\vec{a}_1 + m\vec{a}_2,
 \vec{A}_{2} = -m\vec{a}_1 + (n + m)\vec{a}_2
 $$
 
@@ -114,11 +119,14 @@ $$
 描述跃迁参数的公式是这样的:
 
 $$
-\omega(i,j) = V_{\pi}\left[1-\left(\frac{\vec{d}_{ij}\cdot\hat{z}}{d_{ij}}\right)^2\right]e^{-\frac{d_{ij}-a_{0}}{\delta}} + V_{\sigma}\left(\frac{\vec{d}_{ij}\cdot\hat{z}}{d_{ij}}\right)e^{-\frac{d_{ij}-d_{0}}{\delta}}
+\omega(i,j) = V_{\pi}[1-(\frac{\vec{d}_{ij}\cdot\hat{z}}{d_{ij}})^2]e^{-\frac{d_{ij}-a_{0}}{\delta}} + V_{\sigma}(\frac{\vec{d}_{ij}\cdot\hat{z}}{d_{ij}})e^{-\frac{d_{ij}-d_{0}}{\delta}}
 $$
 
->$\vec{d}_{ij} = \vec{r}_{i} - \vec{r}_{j}$ 是原子间位移矢量, 
-$V_{\pi} = -2.7 eV$ 为 $\pi$ 键的跃迁参数, 
+>$$
+\vec{d}_{ij} = \vec{r}_{i} - \vec{r}_{j}
+>$$
+>是原子间位移矢量.
+>而 $V_{\pi} = -2.7 eV$ 为 $\pi$ 键的跃迁参数, 
 $V_{\sigma} = 0.48 eV$ 为 $\sigma$ 键的跃迁参数, 
 $a_{0} = 0.142 nm$ 为碳碳键长度, 
 $d_{0} = 0.335 nm$ 为层间距离, 
@@ -127,7 +135,9 @@ $\delta = 0.045 nm$ 为衰减长度.
 和单层石墨烯中的计算处理一样, 我们需要将这里的升降算符通过傅里叶变换写成动量空间的形式:
 
 $$
+
 c_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot(\vec{r}_{i} + \vec{R})}c_{\vec{k}}^{I}
+
 $$
 
 >$\vec{R}$ 是包含第i个原子的原胞的原点绝对位置, $\vec{r}_{i}$ 则是相对于原胞内原点的相对位移, $I = 1,\dots,N$ 则是指的原胞内第 $i$ 个原子.
@@ -139,7 +149,8 @@ $$
 $$
 
 >$$
-h_{IJ}(\vec{k}) = \sum_{\vec{R}}\omega(\vec{r}_{I}+\vec{R},\vec{r}_{J})e^{i\vec{k}\cdot(\vec{r}_{I}+\vec{R}-\vec{r}_{J})}$$
+h_{IJ}(\vec{k}) = \sum_{\vec{R}}\omega(\vec{r}_{I}+\vec{R},\vec{r}_{J})e^{i\vec{k}\cdot(\vec{r}_{I}+\vec{R}-\vec{r}_{J})}
+>$$
 >为跃迁矩阵.
 
 然而, 对于 $N \approx 10^4$ 的数据规模进行对角化是十分困难的.
@@ -526,7 +537,7 @@ $$
 \lim_{\alpha\rightarrow 0}\frac{v^{\star}}{v} = 1 -9\alpha^2
 $$
 
->当$1 -9\alpha^2=0$, 这就是'魔角'$\theta_{1} \approx 1.1\degree$ 的来源.
+>当$1 -9\alpha^{2}=0$, 这就是'魔角'$\theta_{1} \approx 1.1\degree$ 的来源.
 
 对于后续的魔角, 对应的规一化狄拉克点速度图像则是这样的:
 
