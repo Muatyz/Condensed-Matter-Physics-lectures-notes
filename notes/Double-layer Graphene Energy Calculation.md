@@ -1,8 +1,3 @@
-<head>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
-
-
 内容总结于:
 1. 转角石墨烯的实验研究.胡皓东.2022.上海交通大学
 2. 氢元素低维纳米结构制备及近场光学表征.吕博赛.2022.上海交通大学
@@ -16,8 +11,10 @@
 对于单层石墨烯而言, 晶格基矢可以写作
 
 $$
-\vec{a}_{1} = \frac{a}{2} \left( 3, \sqrt{3} \right) \\
+
+\vec{a}_{1} = \frac{a}{2} \left( 3,  \sqrt{3} \right),
 \vec{a}_{2} = \frac{a}{2} \left( 3, -\sqrt{3} \right)
+
 $$
 
 >$a \approx 1.42 \r A$ 为碳碳键长度. 
@@ -25,16 +22,20 @@ $$
 根据倒格矢公式可以计算出倒格基矢
 
 $$
-\vec{b}_{1} = \frac{2 \pi}{3 a} \left( 1, \sqrt{3} \right) \\
+
+\vec{b}_{1} = \frac{2 \pi}{3 a} \left( 1, \sqrt{3} \right), 
 \vec{b}_{2} = \frac{2 \pi}{3 a} \left( 1, -\sqrt{3} \right)
+
 $$
 
 而三个最近邻矢量则是
 
 $$
-\delta_{1}  = \frac{a}{2} \left( 1, \sqrt{3} \right) \\
-\delta_{2}  = \frac{a}{2} \left( 1, -\sqrt{3} \right) \\
+
+\delta_{1}  = \frac{a}{2} \left( 1, \sqrt{3} \right), 
+\delta_{2}  = \frac{a}{2} \left( 1, -\sqrt{3} \right), 
 \delta_{3}  = a \left( -1, 0 \right)
+
 $$
 
 用图示来表达这些矢量:
@@ -67,7 +68,7 @@ $$
 使用傅里叶变换将升降算符写成动量空间的形式:
 
 $$
-a_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot\vec{r}_{i,A}}a_{\vec{k}} \\
+a_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot\vec{r}_{i,A}}a_{\vec{k}}, \quad
 b_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot\vec{r}_{i,B}}b_{\vec{k}}
 $$
 
@@ -82,7 +83,7 @@ $$
 对这个哈密顿量求本征值, 即有本征能量为
 
 $$
-E_{\pm}(\vec{k}) = \pm t|f(\vec{k})|\\
+E_{\pm}(\vec{k}) = \pm t|f(\vec{k})|
 = \pm t\sqrt{3 + 2\cos\left(\sqrt{3}k_{x}a\right) + 4\cos\left(\frac{\sqrt{3}}{2}k_{x}a\right)\cos\left(\frac{3}{2}k_{y}a\right)}
 $$
 
@@ -93,7 +94,7 @@ $$
 要产生共格现象, 就需要摩尔超晶格的原胞基矢能够由整数个原晶格基矢组成. 用公式描述即有
 
 $$
-\vec{A}_{1} = n\vec{a}_1 + m\vec{a}_2 \\
+\vec{A}_{1} = n\vec{a}_1 + m\vec{a}_2, \quad
 \vec{A}_{2} = -m\vec{a}_1 + (n + m)\vec{a}_2
 $$
 
@@ -175,8 +176,10 @@ h_{\vec{K}}^{1}(\vec{q})=\hbar v_{F}|\vec{q}|
 0 & e^{-i(\theta_{\vec{q}}+\theta/2)}  \\
 e^{i(\theta_{\vec{q}}+\theta/2)} & 0   \\
 \end{bmatrix}
-=\hbar v_{F}\sigma^{\theta/2}\cdot\vec{q},\\
+=\hbar v_{F}\sigma^{\theta/2}\cdot\vec{q},
+$$
 
+$$
 h_{\vec{K}}^{2}(\vec{q})=\hbar v_{F}|\vec{q}|
 \begin{bmatrix}
 0 & e^{-i(\theta_{\vec{q}}-\theta/2)}  \\
@@ -209,7 +212,10 @@ $$
 我们用紧束缚模型的思路将波函数的形式写出来:
 
 $$
-|\Psi_{\vec{k}\alpha}^{(1)}\rangle=\frac{1}{\sqrt{N}}\sum_{\vec{R}}e^{i\vec{k}\cdot(\vec{R}+\vec{\tau}_{\alpha})}|\vec{R}+\vec{\tau}_{\alpha}\rangle,\\
+|\Psi_{\vec{k}\alpha}^{(1)}\rangle=\frac{1}{\sqrt{N}}\sum_{\vec{R}}e^{i\vec{k}\cdot(\vec{R}+\vec{\tau}_{\alpha})}|\vec{R}+\vec{\tau}_{\alpha}\rangle,
+$$
+
+$$
 |\Psi_{\vec{p}'\beta}^{(2)}\rangle=\frac{1}{\sqrt{N}}\sum_{\vec{R'}}e^{i\vec{p}'\cdot(\vec{R'}+\vec{\tau}_{\beta}')}|\vec{R'}+\vec{\tau}_{\beta}'\rangle.
 $$
 
@@ -252,7 +258,10 @@ $$
 这个式子非常长, 但是我们可以通过一些和式结论来简化这个式子:
 
 $$
-\sum_{\vec{R}}e^{i(\vec{q}_1-\vec{k})\vec{R}} = N\delta_{\vec{q}_1-\vec{k}, \vec{G}_1}, \\
+\sum_{\vec{R}}e^{i(\vec{q}_1-\vec{k})\vec{R}} = N\delta_{\vec{q}_1-\vec{k}, \vec{G}_1}, 
+$$
+
+$$
 \sum_{\vec{R}'}e^{-i(\vec{q}_2-\vec{p}')(\vec{R}'-\vec{d}+\tau')} = N\delta_{\vec{q}_2-\vec{p}', \vec{G}_2'}.
 $$
 
@@ -288,15 +297,21 @@ $\vec{G}_i = M(\theta)\vec{G}_i$.
 
 $$
 |\vec{k}_{\alpha}^{(1)}\rangle \rightarrow 
-|(\vec{k}+\vec{k}_{\theta})_{\beta}^{(2)}\rangle \\
+|(\vec{k}+\vec{k}_{\theta})_{\beta}^{(2)}\rangle
+$$
+
+$$
 |\vec{k}_{\alpha}^{(1)}\rangle \rightarrow
-|(\vec{k}+\vec{k}_{\theta}-\vec{G}_1)_{\beta}^{(2)}\rangle \\
+|(\vec{k}+\vec{k}_{\theta}-\vec{G}_1)_{\beta}^{(2)}\rangle
+$$
+
+$$
 |\vec{k}_{\alpha}^{(1)}\rangle \rightarrow
-|(\vec{k}+\vec{k}_{\theta}-\vec{G}_2)_{\beta}^{(2)}\rangle \\
+|(\vec{k}+\vec{k}_{\theta}-\vec{G}_2)_{\beta}^{(2)}\rangle
 $$
 
 >$$
->|k_{\theta}| = |\vec{K} - \vec{K}'| = 2k_{D}\sin{\frac{\theta}{2}} \\
+>|k_{\theta}| = |\vec{K} - \vec{K}'| = 2k_{D}\sin{\frac{\theta}{2}}
 >$$
 
 其对应的跃迁矩阵元中的分量即为
@@ -306,12 +321,18 @@ T_{1} = \frac{t_{k_{D}}}{\Omega}
 \begin{bmatrix}
     1 & 1\\
     1 & 1\\
-\end{bmatrix}\\
+\end{bmatrix}
+$$
+
+$$
 T_{2} = \frac{t_{k_{D}}}{\Omega}e^{-i\mathcal{G}^{(2)'}\cdot\vec{d}}
 \begin{bmatrix}
     e^{-i\Phi} & 1\\
     e^{i\Phi} & e^{-i\Phi}\\
-\end{bmatrix}\\
+\end{bmatrix}
+$$
+
+$$
 T_{3} = \frac{t_{k_D}}{\Omega}e^{-i\mathcal{G}^{(3')}\cdot\vec{d}}
 \begin{bmatrix}
 e^{i\Phi} & 1\\
@@ -326,14 +347,23 @@ $$
 前面我们已经提到, 对于一个超晶格网络上的态 $|(\vec{k}+m\vec{G_1}+n\vec{G_2})^{1}\rangle$ 对应三个跃迁过程:
 
 $$
-|(\vec{k}+m\vec{G_1}+n\vec{G_2})^{(1)}\rangle\rightarrow|(\vec{k}+\vec{k}_{\theta}+m\vec{G_1}+n\vec{G_2})^{(2)}\rangle\\
-|(\vec{k}+m\vec{G_1}+n\vec{G_2})^{(1)}\rangle\rightarrow|(\vec{k}+\vec{k}_{\theta}+(m - 1)\vec{G_1}+n\vec{G_2})^{(2)}\rangle\\
-|(\vec{k}+m\vec{G_1}+n\vec{G_2})^{(1)}\rangle\rightarrow|(\vec{k}+\vec{k}_{\theta}+m\vec{G_1}+(n - 1)\vec{G_2})^{(2)}\rangle\\
+|(\vec{k}+m\vec{G_1}+n\vec{G_2})^{(1)}\rangle\rightarrow|(\vec{k}+\vec{k}_{\theta}+m\vec{G_1}+n\vec{G_2})^{(2)}\rangle
+$$
+
+$$
+|(\vec{k}+m\vec{G_1}+n\vec{G_2})^{(1)}\rangle\rightarrow|(\vec{k}+\vec{k}_{\theta}+(m - 1)\vec{G_1}+n\vec{G_2})^{(2)}\rangle
+$$
+
+$$
+|(\vec{k}+m\vec{G_1}+n\vec{G_2})^{(1)}\rangle\rightarrow|(\vec{k}+\vec{k}_{\theta}+m\vec{G_1}+(n - 1)\vec{G_2})^{(2)}\rangle
 $$
 
 >$$
-m = -M, \dots,-1, 0, 1, \dots, M\\
-n = -N, \dots,-1, 0, 1, \dots, N\\
+>m = -M, \dots,-1, 0, 1, \dots, M
+>$$
+>
+>$$
+n = -N, \dots,-1, 0, 1, \dots, N
 >$$
 >
 >一般采取 $M = N = 4$ 的截断即可取得理想计算结果.
@@ -375,10 +405,10 @@ $$
 >接下来的公式会很长: 确保你的 Markdown 阅读器支持滑轮显示公式, ~~或者使用带鱼屏~~.
 
 $$
-\begin{aligned}
-&h^{\vec{K}}(\vec{q})
-=h_{ij}\\
-&=\begin{bmatrix}
+
+h^{\vec{K}}(\vec{q})
+=h_{ij}=
+\begin{bmatrix}
 h_{\vec{K}}^{(1)}(\vec{q}-M\vec{G}_1-N\vec{G_2}) & 0 &\dots& 0 & T^{1} & 0 & \dots & 0\\
 0 & h_{\vec{K}}^{(1)}(\vec{q}-(M - 1)\vec{G}_1-N\vec{G_2}) &\dots & 0 & T^{2} & T^{1} & \dots & 0\\
 \vdots & \vdots & \ddots & \vdots & \vdots & \vdots & \ddots & \vdots\\
@@ -388,7 +418,7 @@ T^{1\dagger} & T^{2\dagger} & \dots & 0 & h_{\vec{K}}^{(2)}(\vec{q}+\vec{k}_{\th
 0 & 0 & \dots & 0 & 0 & 0 & \cdots & 0\\
 0 & 0 & \dots & T^{1\dagger} & 0 & 0 & \dots & h_{\vec{K}}^{(2)}(\vec{q}+\vec{k}_{\theta}+M\vec{G}_1+N\vec{G_2})\\
 \end{bmatrix}
-\end{aligned}
+
 $$
 
 
@@ -431,11 +461,17 @@ $$
 T_1=w\begin{bmatrix}
 1 & 1\\
 1 & 1\\
-\end{bmatrix},\\
+\end{bmatrix},
+$$
+
+$$
 T_2=w\begin{bmatrix}
 1 & \omega^{\star}\\
 \omega & 1\\
-\end{bmatrix},\\
+\end{bmatrix},
+$$
+
+$$
 T_3=w\begin{bmatrix}
 1 & \omega\\
 \omega^{\star} & 1\\
@@ -448,11 +484,17 @@ $$
 T_1=\begin{bmatrix}
 w' & w\\
 w & w'\\
-\end{bmatrix},\\
+\end{bmatrix},
+$$
+
+$$
 T_2=\begin{bmatrix}
 w' & w\omega^{\star}\\
 w\omega & w'\\
-\end{bmatrix},\\
+\end{bmatrix},
+$$
+
+$$
 T_3=\begin{bmatrix}
 w' & w\omega\\
 w\omega^{\star} & w'\\
@@ -461,11 +503,12 @@ $$
 
 >$w = \frac{t_{k_{D}}}{\Omega}, \omega = e^{i2\pi/3}$
 
-我们分别求解不考虑弛豫效应和考虑弛豫效应的情况下的能带结构, 可以得到其对比图像:
+我们分别求解'不考虑弛豫效应'和'考虑弛豫效应'的情况下的能带结构, 可以得到其对比图像:
 
 <center><img src="png/relaxation.png" width = "700" height = ""></center>
 
 >该图引自:转角石墨烯的实验研究.胡皓东.2022.上海交通大学.
+>
 >其中, 我们重点对比 (b) 和 (d)(或者(f)和(h)), (d) 和 (h) 是未考虑弛豫效应的情况.
 >不难发现, 弛豫效应使得 $\Gamma$ 点的能隙明显增大, 并且出现了新的能带, 该能带在很大的 $k$ 空间内都是近似相等的, 我们将这种能带称为平带.
 
@@ -483,7 +526,7 @@ $$
 \lim_{\alpha\rightarrow 0}\frac{v^{\star}}{v} = 1 -9\alpha^2
 $$
 
->这就是'魔角'$\theta_{1} \approx 1.1\degree$ 的来源.
+>当$1 -9\alpha^2=0$, 这就是'魔角'$\theta_{1} \approx 1.1\degree$ 的来源.
 
 对于后续的魔角, 对应的规一化狄拉克点速度图像则是这样的:
 
