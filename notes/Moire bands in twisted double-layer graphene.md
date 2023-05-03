@@ -96,14 +96,12 @@ We choose the coordinate system depicted in Fig. 1 for which the decoupled bilay
 
 相对于固定坐标系, 旋转一个角度θ的层的狄拉克-哈米顿项（21）为
 
-$$
-v_k=vk\begin{bmatrix} 
-
-0 & e^{i(θ_{k}-θ)}\\
-e^{-i(θ_{k}-θ)} & 0\\ 
-
+$$v_k=
+vk\begin{bmatrix} 
+0 & e^{i(θ_{k}-θ)} \\
+e^{-i(θ_{k}-θ)} & 0 \\ 
 \end{bmatrix}
-$$.
+$$
 
 其中v是狄拉克速度, k是从层的狄拉克点测得的动量, $θ_k$ 是相对于X轴的动量方向, 自旋体哈密尔顿作用于各个层的A和B子晶格自由度.
 
@@ -432,7 +430,7 @@ T_{b}^{\dagger} & h_{\vec{k}_{b}}(-\theta/2) & 0 & 0\\
 T_{tr}^{\dagger} & 0 & h_{\vec{k}_{tr}}(-\theta/2) & 0\\
 T_{tl}^{\dagger} & 0 & 0 & h_{\vec{k}_{tl}}(-\theta/2)\\ 
 \end{bmatrix}
-$$,
+$$
 
 其中
 $\vec{k}$
@@ -682,7 +680,9 @@ We expect that dependence on $\vec{d}$ will be observable only at short period (
 
 译:
 
+<a id="target">
 我们现在证明错位双层体系的能谱与其中一层的线性平移无关, 通过一个幺正变换使得哈密顿量不依赖于 $\vec{d}$.
+</a>
 
 考虑动量 $\vec{Q}$ 在第一个摩尔布里渊区的哈密顿量 $H_{\vec{Q}}$ .
 对于每个 $k$ 空间三角布拉维格子上的动量为（见图1）
