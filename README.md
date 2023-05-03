@@ -8,10 +8,11 @@
 
 也聊作学习的笔记之用。
 
-在Github上的阅读体验一般，此为公式无法完全编译之故。为了最佳使用，可挑选自身最感兴趣之文章，
-并用Visual Studio Code,Obsidian等编辑器之流查看效果最好。
+本库中文档皆由VS Code编写, 在使用 GitHub Markdown Preview插件的情况下尽力对公式进行优化以便在Github上能够正常阅读, 然而Github本身由MathJax渲染公式，而MathJax对于一些高级公式的支持并不完善，因此在Github上的阅读体验其实一般.
 
-注意:某些浏览器扩展(e.g.Tex All the Things)可能能帮助你在Github上查看公式，但是效果难以保证。
+为了获得最佳的阅读体验，仍然建议阅读者完整下载.md文件进行阅读.可挑选自身最感兴趣之文章，并用Visual Studio Code,Obsidian等编辑器之流,查看效果最好。
+
+注意:某些浏览器扩展(e.g.Tex All the Things)可能会帮助你在Github上查看公式，但是效果难以保证。
 
 目前已经添加的论文：
 

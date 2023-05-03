@@ -11,10 +11,10 @@
 对于单层石墨烯而言, 晶格基矢可以写作
 
 $$
-
-\vec{a}_{1} = \frac{a}{2} ( 3,  \sqrt{3} ),
-\vec{a}_{2} = \frac{a}{2} ( 3, -\sqrt{3} )
-
+\begin{equation}
+\vec{a}_{1} = \frac{a}{2}(3, \sqrt{3}),
+\vec{a}_{2} = \frac{a}{2}(3,-\sqrt{3}).
+\end{equation}
 $$
 
 >$a \approx 1.42 \r A$ 为碳碳键长度. 
@@ -22,20 +22,20 @@ $$
 根据倒格矢公式可以计算出倒格基矢
 
 $$
-
+\begin{equation}
 \vec{b}_{1} = \frac{2 \pi}{3 a} ( 1, \sqrt{3} ), 
 \vec{b}_{2} = \frac{2 \pi}{3 a} ( 1, -\sqrt{3}).
-
+\end{equation}
 $$
 
 而三个最近邻矢量则是
 
 $$
-
-\delta_{1}  = \frac{a}{2} ( 1, \sqrt{3} ), 
-\delta_{2}  = \frac{a}{2} ( 1, -\sqrt{3} ), 
-\delta_{3}  = a ( -1, 0 )
-
+\begin{equation}
+\delta_{1} = \frac{a}{2}(1, \sqrt{3}), 
+\delta_{2} = \frac{a}{2}(1, -\sqrt{3}), 
+\delta_{3} = a( -1, 0 )
+\end{equation}
 $$
 
 用图示来表达这些矢量:
@@ -60,7 +60,9 @@ $$
 只考虑最近邻跃迁,即三个最近邻矢量, 可以写出对应的哈密顿量:
 
 $$
+\begin{equation}
 \hat{H} = t\sum_{i,j = \langle i\rangle}a_{i}^{\dagger}b_{j} + h.c..
+\end{equation}
 $$
 
 >$t\approx 2.7 eV$ 为跃迁系数(最近邻跃迁能量), $a_{i}^{\dagger}$ 为在 $i$ 位置产生一个电子的产生算符, $b_{j}$ 为在 $j$ 位置湮灭一个电子的湮灭算符.
@@ -68,17 +70,18 @@ $$
 使用傅里叶变换将升降算符写成动量空间的形式:
 
 $$
-a_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot\vec{r}_{i,A}}a_{\vec{k}},
-$$
-
-$$
-b_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot\vec{r}_{i,B}}b_{\vec{k}}.
+\begin{equation}
+a_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot\vec{r}_{i, A}}a_{\vec{k}},
+b_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot\vec{r}_{i, B}}b_{\vec{k}}.
+\end{equation}
 $$
 
 将上式代入到哈密顿量的式子中, 即有
 
 $$
+\begin{equation}
 \hat{H} = \sum_{\vec{k}}h(\vec{k})=t\sum_{\vec{k}}f(\vec{k})a_{\vec{k}}^{\dagger}b_{\vec{k}} + h.c..
+\end{equation}
 $$
 
 >$f(\vec{k}) = e^{i\vec{k}\cdot\delta_{1}} + e^{i\vec{k}\cdot\delta_{2}} + e^{i\vec{k}\cdot\delta_{3}} = \sum_{i = 1}^{3}e^{i\vec{k}\cdot\delta_{i}}$.
@@ -86,8 +89,10 @@ $$
 对这个哈密顿量求本征值, 即有本征能量为
 
 $$
+\begin{equation}
 E_{\pm}(\vec{k}) = \pm t|f(\vec{k})|
 = \pm t\sqrt{3 + 2\cos\left(\sqrt{3}k_{x}a\right) + 4\cos\left(\frac{\sqrt{3}}{2}k_{x}a\right)\cos\left(\frac{3}{2}k_{y}a\right)}
+\end{equation}
 $$
 
 # 超晶格-转角双层石墨烯
@@ -99,8 +104,10 @@ $$
 用公式描述即有
 
 $$
+\begin{equation}
 \vec{A}_{1} = n\vec{a}_1 + m\vec{a}_2,
 \vec{A}_{2} = -m\vec{a}_1 + (n + m)\vec{a}_2
+\end{equation}
 $$
 
 ---
@@ -111,7 +118,9 @@ $$
 写出紧束缚哈密顿量:
 
 $$
+\begin{equation}
 \hat{H} = \sum_{i,j}\omega(i,j)c_{i}^{\dagger}c_{j} + h.c.
+\end{equation}
 $$
 
 >$i,j$ 是原胞中的原子指标, $c_{i}^{\dagger}$ 为在 $i$ 位置产生一个电子的产生算符, $c_{j}$ 为在 $j$ 位置湮灭一个电子的湮灭算符, $\omega(i,j)$ 为跃迁参数.
@@ -119,12 +128,12 @@ $$
 描述跃迁参数的公式是这样的:
 
 $$
+\begin{equation}
 \omega(i,j) = V_{\pi}[1-(\frac{\vec{d}_{ij}\cdot\hat{z}}{d_{ij}})^2]e^{-\frac{d_{ij}-a_{0}}{\delta}} + V_{\sigma}(\frac{\vec{d}_{ij}\cdot\hat{z}}{d_{ij}})e^{-\frac{d_{ij}-d_{0}}{\delta}}
+\end{equation}
 $$
 
->$$
-\vec{d}_{ij} = \vec{r}_{i} - \vec{r}_{j}
->$$
+>$\vec{d}_{ij} = \vec{r}_{i} - \vec{r}_{j}$
 >是原子间位移矢量.
 >而 $V_{\pi} = -2.7 eV$ 为 $\pi$ 键的跃迁参数, 
 $V_{\sigma} = 0.48 eV$ 为 $\sigma$ 键的跃迁参数, 
@@ -135,9 +144,9 @@ $\delta = 0.045 nm$ 为衰减长度.
 和单层石墨烯中的计算处理一样, 我们需要将这里的升降算符通过傅里叶变换写成动量空间的形式:
 
 $$
-
+\begin{equation}
 c_{i} = \sum_{\vec{k}}e^{i\vec{k}\cdot(\vec{r}_{i} + \vec{R})}c_{\vec{k}}^{I}
-
+\end{equation}
 $$
 
 >$\vec{R}$ 是包含第i个原子的原胞的原点绝对位置, $\vec{r}_{i}$ 则是相对于原胞内原点的相对位移, $I = 1,\dots,N$ 则是指的原胞内第 $i$ 个原子.
@@ -145,12 +154,12 @@ $$
 代入后得到哈密顿量的动量形式:
 
 $$
+\begin{equation}
 \hat{H} = \sum_{\vec{k}}h(\vec{k}) = \sum_{\vec{k}}\sum_{I,J}h_{IJ}(\vec{k})c_{\vec{k}}^{I,\dagger}c_{\vec{k}}^{J} + h.c..
+\end{equation}
 $$
 
->$$
-h_{IJ}(\vec{k}) = \sum_{\vec{R}}\omega(\vec{r}_{I}+\vec{R},\vec{r}_{J})e^{i\vec{k}\cdot(\vec{r}_{I}+\vec{R}-\vec{r}_{J})}
->$$
+>$h_{IJ}(\vec{k}) = \sum_{\vec{R}}\omega(\vec{r}_{I}+\vec{R},\vec{r}_{J})e^{i\vec{k}\cdot(\vec{r}_{I}+\vec{R}-\vec{r}_{J})}$
 >为跃迁矩阵.
 
 然而, 对于 $N \approx 10^4$ 的数据规模进行对角化是十分困难的.
@@ -170,52 +179,56 @@ h_{IJ}(\vec{k}) = \sum_{\vec{R}}\omega(\vec{r}_{I}+\vec{R},\vec{r}_{J})e^{i\vec{
 对于单层的石墨烯, 其狄拉克哈密顿量是这样表示的:
 
 $$
+\begin{equation}
 h_{\vec{K}}(\vec{q})=\hbar v_{F}|\vec{q}|
 \begin{bmatrix}
 0 & e^{-i\theta_{\vec{q}}}  \\
 e^{i\theta_{\vec{q}}} & 0   \\
 \end{bmatrix}
+\end{equation}
 $$
 
->$\theta_{\vec{q}} = \tan^{-1}(q_y/q_x)$
+>$\theta_{\vec{q}} = \tan^{-1}(q_{y}/q_{x})$
 
 所以对于相对转角为 $\theta$ 的双层石墨烯, 其单层的狄拉克哈密顿量可以分别写作:
 
 $$
+\begin{equation}
 h_{\vec{K}}^{1}(\vec{q})=\hbar v_{F}|\vec{q}|
 \begin{bmatrix}
 0 & e^{-i(\theta_{\vec{q}}+\theta/2)}  \\
 e^{i(\theta_{\vec{q}}+\theta/2)} & 0   \\
 \end{bmatrix}
 =\hbar v_{F}\sigma^{\theta/2}\cdot\vec{q},
+\end{equation}
 $$
 
 $$
+\begin{equation}
 h_{\vec{K}}^{2}(\vec{q})=\hbar v_{F}|\vec{q}|
 \begin{bmatrix}
 0 & e^{-i(\theta_{\vec{q}}-\theta/2)}  \\
 e^{i(\theta_{\vec{q}}-\theta/2)} & 0   \\
 \end{bmatrix}
 =\hbar v_{F}\sigma^{-\theta/2}\cdot\vec{q}.
+\end{equation}
 $$
 
 它们各自作用在单层石墨烯的 $A$, $B$ 子格上, 所以对于整体的哈密顿量而言, 是作用在
-
-$$
-\begin{bmatrix}
+$\begin{bmatrix}
 \alpha_{\vec{q}} \\
 \beta_{\vec{q}} \\
-\end{bmatrix}
-$$
-
+\end{bmatrix}$
 这样一个两分量的旋量上的. 
 
 接下来要解决的时层间隧穿项. 
 我们将层间跃迁的矩阵元写出来:
 
 $$
+\begin{equation}
 T_{\vec{k}\vec{p}'}^{\alpha\beta} = 
 \langle \Psi_{\vec{k}\alpha}^{(1)}|\hat{H_{T}}|\Psi_{\vec{p}'\beta}^{(2)}\rangle
+\end{equation}
 $$
 
 >该矩阵元描述的是一个动量为 $\vec{p}'=M(\theta)\vec{p}$ 的电子,在第二层的 $\beta$ 子格上, 通过层间跃迁到第一层的 $\alpha$ 子格上, 成为动量为 $\vec{k}$ 的态的过程, $M(\theta)$ 是一个旋转矩阵.
@@ -223,11 +236,15 @@ $$
 我们用紧束缚模型的思路将波函数的形式写出来:
 
 $$
+\begin{equation}
 |\Psi_{\vec{k}\alpha}^{(1)}\rangle=\frac{1}{\sqrt{N}}\sum_{\vec{R}}e^{i\vec{k}\cdot(\vec{R}+\vec{\tau}_{\alpha})}|\vec{R}+\vec{\tau}_{\alpha}\rangle,
+\end{equation}
 $$
 
 $$
+\begin{equation}
 |\Psi_{\vec{p}'\beta}^{(2)}\rangle=\frac{1}{\sqrt{N}}\sum_{\vec{R'}}e^{i\vec{p}'\cdot(\vec{R'}+\vec{\tau}_{\beta}')}|\vec{R'}+\vec{\tau}_{\beta}'\rangle.
+\end{equation}
 $$
 
 >$\tau_{A} = 0, \tau_{B} = \tau$. $\vec{R}$ 是对所有三角布拉维格子求和的指标.
@@ -235,7 +252,9 @@ $$
 我们不妨选取 $AB$ 堆叠处作为原点, 那么就有关系式
 
 $$
+\begin{equation}
 \vec{R'} = M(\theta)(\vec{R}-\tau) + d
+\end{equation}
 $$
 
 >$d$ 是层间间距.
@@ -243,15 +262,19 @@ $$
 将波函数代入到层间跃迁矩阵元中, 并且采用**两中心近似**, 就能得到层间跃迁矩阵元:
 
 $$
+\begin{equation}
 T_{\vec{k}\vec{p}'}^{\alpha\beta}=\frac{1}{N}
 \sum_{\vec{R}}\sum_{\vec{R}'}
 e^{i[-\vec{k}(\vec{R}+\tau_{\alpha})+\vec{p}'(\vec{R}'+\tau_{\beta}')]}
 t(\vec{R}+\tau_{\alpha}-\vec{R}'-\tau_{\beta}')
+\end{equation}
 $$
 
 >两中心近似, 指的是假设电子只和起始原子和终止原子之间的原子相互作用, 而忽略了其他原子的影响. 用公式可以这样描述:
 >$$
-\langle\vec{R}+\tau_{\alpha}|\hat{H_T}|\vec{R'}+\tau_{\beta}'\rangle = t(\vec{R}+\tau_{\alpha}-\vec{R}'-\tau_{\beta}')
+>\begin{equation}
+>\langle\vec{R}+\tau_{\alpha}|\hat{H_T}|\vec{R'}+\tau_{\beta}'\rangle = t(\vec{R}+\tau_{\alpha}-\vec{R}'-\tau_{\beta}')
+>\end{equation}
 >$$
 >因为转角双层石墨烯中碳碳键很小, 所以这个式子用来描述电子跃迁的过程非常好用.
 
@@ -259,28 +282,36 @@ $$
 
 
 $$
+\begin{equation}
 T_{\vec{k}\vec{p}'}^{\alpha\beta}=\frac{1}{N^2}
 \sum_{\vec{R}}\sum_{\vec{R}'}\sum_{\vec{q}_1}\sum_{\vec{q}_2}
 e^{i[-\vec{k}(\vec{R}+\tau_{\alpha})+\vec{p}'(\vec{R}'+\tau_{\beta}')]}
 e^{i[\vec{q}_1(\vec{R}+\tau_{\alpha})-\vec{q}_2(\vec{R}'+\tau_{\beta}')]}
 \frac{t_{\vec{q}}}{\Omega}
+\end{equation}
 $$
 
 这个式子非常长, 但是我们可以通过一些和式结论来简化这个式子:
 
 $$
+\begin{equation}
 \sum_{\vec{R}}e^{i(\vec{q}_1-\vec{k})\vec{R}} = N\delta_{\vec{q}_1-\vec{k}, \vec{G}_1}, 
+\end{equation}
 $$
 
 $$
+\begin{equation}
 \sum_{\vec{R}'}e^{-i(\vec{q}_2-\vec{p}')(\vec{R}'-\vec{d}+\tau')} = N\delta_{\vec{q}_2-\vec{p}', \vec{G}_2'}.
+\end{equation}
 $$
 
 最后我们就得到了层间跃迁矩阵元:
 
 $$
+\begin{equation}
 T_{\vec{k}\vec{p}'}^{\alpha\beta}=\sum_{\vec{G}_1\vec{G_2}}\frac{t_{\overline{\vec{k}}+\vec{G}_1}}{\Omega}
 e^{i[\vec{G}_1\tau_{\alpha}-\vec{G}_2(\tau_{\beta}-\tau)-\vec{G}_2'\vec{d}]}\delta_{\overline{\vec{k}}+\vec{G}_1,\overline{\vec{p}}'+\vec{G}_2'}
+\end{equation}
 $$
 
 > $\Omega$ 是原胞面积, 
@@ -294,7 +325,9 @@ $\vec{G}_i = M(\theta)\vec{G}_i$.
 
 >注意到总有关系式
 >$$
-\overline{\vec{k}} + \vec{G}_1 = \overline{\vec{p}}' + \vec{G}_2'
+>\begin{equation}
+>\overline{\vec{k}} + \vec{G}_1 = \overline{\vec{p}}' + \vec{G}_2'
+>\end{equation}
 >$$
 >成立
 
@@ -307,18 +340,18 @@ $\vec{G}_i = M(\theta)\vec{G}_i$.
 我们假定, 在低能模型下, 只有 $q_b, q_{tr}, q_{tl}$ 对应的三个跃迁过程有意义. 具体到电子态, 即
 
 $$
+\begin{equation}
+\begin{aligned}
 |\vec{k}_{\alpha}^{(1)}\rangle \rightarrow 
-|(\vec{k}+\vec{k}_{\theta})_{\beta}^{(2)}\rangle
-$$
+|(\vec{k}+\vec{k}_{\theta})_{\beta}^{(2)}\rangle \\
 
-$$
 |\vec{k}_{\alpha}^{(1)}\rangle \rightarrow
-|(\vec{k}+\vec{k}_{\theta}-\vec{G}_1)_{\beta}^{(2)}\rangle
-$$
+|(\vec{k}+\vec{k}_{\theta}-\vec{G}_1)_{\beta}^{(2)}\rangle \\
 
-$$
 |\vec{k}_{\alpha}^{(1)}\rangle \rightarrow
 |(\vec{k}+\vec{k}_{\theta}-\vec{G}_2)_{\beta}^{(2)}\rangle
+\end{aligned}
+\end{equation}
 $$
 
 >$$
@@ -328,27 +361,27 @@ $$
 其对应的跃迁矩阵元中的分量即为
 
 $$
-T_{1} = \frac{t_{k_{D}}}{\Omega}
+\begin{equation}
+\begin{aligned}
+T_{1} &= \frac{t_{k_{D}}}{\Omega}
 \begin{bmatrix}
     1 & 1\\
     1 & 1\\
-\end{bmatrix}
-$$
+\end{bmatrix},\\
 
-$$
-T_{2} = \frac{t_{k_{D}}}{\Omega}e^{-i\mathcal{G}^{(2)'}\cdot\vec{d}}
+T_{2} &= \frac{t_{k_{D}}}{\Omega}e^{-i\mathcal{G}^{(2)'}\cdot\vec{d}}
 \begin{bmatrix}
     e^{-i\Phi} & 1\\
     e^{i\Phi} & e^{-i\Phi}\\
-\end{bmatrix}
-$$
+\end{bmatrix},\\
 
-$$
-T_{3} = \frac{t_{k_D}}{\Omega}e^{-i\mathcal{G}^{(3')}\cdot\vec{d}}
+T_{3} &= \frac{t_{k_D}}{\Omega}e^{-i\mathcal{G}^{(3')}\cdot\vec{d}}
 \begin{bmatrix}
 e^{i\Phi} & 1\\
 e^{-i\Phi} & e^{i\Phi} \\
 \end{bmatrix}
+\end{aligned}
+\end{equation}
 $$
 
 > $\phi = 2\pi/3$, 该数值来源于 $\mathcal{G}^{(2)}\cdot\tau$
@@ -358,15 +391,15 @@ $$
 前面我们已经提到, 对于一个超晶格网络上的态 $|(\vec{k}+m\vec{G_1}+n\vec{G_2})^{1}\rangle$ 对应三个跃迁过程:
 
 $$
-|(\vec{k}+m\vec{G_1}+n\vec{G_2})^{(1)}\rangle\rightarrow|(\vec{k}+\vec{k}_{\theta}+m\vec{G_1}+n\vec{G_2})^{(2)}\rangle
-$$
+\begin{equation}
+\begin{aligned}
+|(\vec{k}+m\vec{G_1}+n\vec{G_2})^{(1)}\rangle\rightarrow|(\vec{k}+\vec{k}_{\theta}+m\vec{G_1}+n\vec{G_2})^{(2)}\rangle,\\
 
-$$
-|(\vec{k}+m\vec{G_1}+n\vec{G_2})^{(1)}\rangle\rightarrow|(\vec{k}+\vec{k}_{\theta}+(m - 1)\vec{G_1}+n\vec{G_2})^{(2)}\rangle
-$$
+|(\vec{k}+m\vec{G_1}+n\vec{G_2})^{(1)}\rangle\rightarrow|(\vec{k}+\vec{k}_{\theta}+(m - 1)\vec{G_1}+n\vec{G_2})^{(2)}\rangle,\\
 
-$$
 |(\vec{k}+m\vec{G_1}+n\vec{G_2})^{(1)}\rangle\rightarrow|(\vec{k}+\vec{k}_{\theta}+m\vec{G_1}+(n - 1)\vec{G_2})^{(2)}\rangle
+\end{aligned}
+\end{equation}
 $$
 
 >$$
@@ -388,6 +421,7 @@ $$
 所以我们就可以定义基底
 
 $$
+\begin{equation}
 |q\rangle=
 \begin{bmatrix}
 |(\vec{q}-M\vec{G}_1-N\vec{G}_2)^{(1)}\rangle\\
@@ -405,6 +439,7 @@ $$
 \dots\\
 |(\vec{q}+\vec{k}_{\theta}+M\vec{G}_1+N\vec{G}_2)^{(2)}\rangle\\
 \end{bmatrix}
+\end{equation}
 $$
 
 >计算可知该基底长度为 $(2M+1)(2N+1)$
@@ -416,7 +451,7 @@ $$
 >接下来的公式会很长: 确保你的 Markdown 阅读器支持滑轮显示公式, ~~或者使用带鱼屏~~.
 
 $$
-
+\begin{equation}
 h^{\vec{K}}(\vec{q})
 =h_{ij}=
 \begin{bmatrix}
@@ -429,7 +464,7 @@ T^{1\dagger} & T^{2\dagger} & \dots & 0 & h_{\vec{K}}^{(2)}(\vec{q}+\vec{k}_{\th
 0 & 0 & \dots & 0 & 0 & 0 & \cdots & 0\\
 0 & 0 & \dots & T^{1\dagger} & 0 & 0 & \dots & h_{\vec{K}}^{(2)}(\vec{q}+\vec{k}_{\theta}+M\vec{G}_1+N\vec{G_2})\\
 \end{bmatrix}
-
+\end{equation}
 $$
 
 
@@ -438,7 +473,9 @@ $$
 由此得到总哈密顿量
 
 $$
+\begin{equation}
 \hat{H}^{\vec{k}}_{ctn}=\sum_{\vec{q}}h^{\vec{K}}(\vec{q})|\vec{q}\rangle\langle\vec{q}|
+\end{equation}
 $$
 
 连续模型在这里还需要对进行进一步的修正.
@@ -469,47 +506,47 @@ $AA$ 堆叠中原子相互靠得很近, 这会使得势能变得更高, 所以�
 在[转角石墨烯中的摩尔能带](/notes/Moire%20bands%20in%20twisted%20double-layer%20graphene.md#"target")一文中我们已经知道, 转角双层石墨烯的能谱在 $\theta\neq 0$ 时, 与 $\vec{d}$ 无关. 所以我们可以把 $T_1, T_2, T_3$ 重写一遍:
 
 $$
+\begin{equation}
+\begin{aligned}
 T_1=w\begin{bmatrix}
 1 & 1\\
 1 & 1\\
-\end{bmatrix},
-$$
+\end{bmatrix},\\
 
-$$
 T_2=w\begin{bmatrix}
 1 & \omega^{\star}\\
 \omega & 1\\
-\end{bmatrix},
-$$
+\end{bmatrix},\\
 
-$$
 T_3=w\begin{bmatrix}
 1 & \omega\\
 \omega^{\star} & 1\\
 \end{bmatrix}.
+\end{aligned}
+\end{equation}
 $$
 
 为了引入弛豫效应, 我们引入 $w'<w$, 它代表着 $AA$ 堆叠中有着更大的 $a$ 和更小的 堆叠区域面积. 于是我们就有
 
 $$
+\begin{equation}
+\begin{aligned}
 T_1=\begin{bmatrix}
 w' & w\\
 w & w'\\
-\end{bmatrix},
-$$
+\end{bmatrix},\\
 
-$$
 T_2=\begin{bmatrix}
 w' & w\omega^{\star}\\
 w\omega & w'\\
-\end{bmatrix},
-$$
+\end{bmatrix},\\
 
-$$
 T_3=\begin{bmatrix}
 w' & w\omega\\
 w\omega^{\star} & w'\\
 \end{bmatrix}.
+\end{aligned}
+\end{equation}
 $$
 
 >$w = \frac{t_{k_{D}}}{\Omega}, \omega = e^{i2\pi/3}$
